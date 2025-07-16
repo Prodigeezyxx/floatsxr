@@ -8,78 +8,110 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* XR Studio Theme - Dark cosmic with vibrant accents */
-    --background: 220 27% 2%;
-    --foreground: 210 20% 95%;
+    /* Dark theme matching reference exactly */
+    --background: 0 0% 0%;
+    --foreground: 220 13% 91%;
 
-    --card: 220 25% 4%;
-    --card-foreground: 210 20% 95%;
+    --card: 220 13% 5%;
+    --card-foreground: 220 13% 91%;
 
-    --popover: 220 25% 4%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 220 13% 5%;
+    --popover-foreground: 220 13% 91%;
 
-    /* Primary - Electric cyan for XR/tech feel */
-    --primary: 190 91% 65%;
-    --primary-foreground: 220 27% 2%;
-    --primary-glow: 190 91% 75%;
+    /* Primary - Teal to match reference */
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
-    /* Secondary - Deep purple for depth */
-    --secondary: 260 30% 15%;
-    --secondary-foreground: 210 20% 95%;
+    /* Secondary - Gray shades */
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 13% 91%;
 
-    --muted: 220 25% 8%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 220 13% 5%;
+    --muted-foreground: 220 9% 46%;
 
-    /* Accent - Bright purple for highlights */
-    --accent: 270 91% 65%;
-    --accent-foreground: 220 27% 2%;
+    /* Accent - Teal matching reference */
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 20% 95%;
+    --destructive-foreground: 220 13% 91%;
 
-    --border: 220 25% 12%;
-    --input: 220 25% 8%;
-    --ring: 190 91% 65%;
+    --border: 220 13% 15%;
+    --input: 220 13% 5%;
+    --ring: 180 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Gradients for immersive feel */
-    --gradient-primary: linear-gradient(135deg, hsl(190, 91%, 65%), hsl(270, 91%, 65%));
-    --gradient-cosmic: linear-gradient(180deg, hsl(220, 27%, 2%), hsl(260, 30%, 8%));
-    --gradient-glow: linear-gradient(135deg, hsl(190, 91%, 65%, 0.2), hsl(270, 91%, 65%, 0.1));
-
-    /* Shadows with glow effects */
-    --shadow-primary: 0 0 40px hsl(190, 91%, 65%, 0.3);
-    --shadow-accent: 0 0 40px hsl(270, 91%, 65%, 0.2);
-    --shadow-deep: 0 20px 60px -20px hsl(220, 27%, 2%, 0.8);
-
-    /* Animation */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-glow: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
-    --sidebar-background: 220 25% 4%;
-    --sidebar-foreground: 210 20% 95%;
-    --sidebar-primary: 190 91% 65%;
-    --sidebar-primary-foreground: 220 27% 2%;
-    --sidebar-accent: 220 25% 8%;
-    --sidebar-accent-foreground: 210 20% 95%;
-    --sidebar-border: 220 25% 12%;
-    --sidebar-ring: 190 91% 65%;
-  }
-
-  .dark {
-    /* Already dark theme optimized */
-    --background: 220 27% 2%;
-    --foreground: 210 20% 95%;
+    --sidebar-background: 220 13% 5%;
+    --sidebar-foreground: 220 13% 91%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 220 13% 15%;
+    --sidebar-accent-foreground: 220 13% 91%;
+    --sidebar-border: 220 13% 15%;
+    --sidebar-ring: 180 100% 50%;
   }
 }
 
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Inter', sans-serif;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
   }
 }
+
+/* Animation Styles - matching reference exactly */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.slide-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.blur-in {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.animate-in {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+  filter: blur(0px);
+}
+
+/* Stagger delays */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
+.delay-600 { transition-delay: 0.6s; }
+.delay-700 { transition-delay: 0.7s; }
+.delay-800 { transition-delay: 0.8s; }
+.delay-900 { transition-delay: 0.9s; }
+.delay-1000 { transition-delay: 1s; }
+
+/* Font classes */
+.font-geist { font-family: 'Inter', sans-serif !important; }
+.font-jakarta { font-family: 'Inter', sans-serif !important; }

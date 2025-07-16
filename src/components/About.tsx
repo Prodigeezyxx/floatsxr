@@ -8,13 +8,13 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
-              <p className="text-sm font-medium uppercase tracking-wider text-primary mb-4">
+              <p className="text-sm font-medium uppercase tracking-wider text-primary mb-4 slide-in-left">
                 Who We Are
               </p>
-              <h2 className="text-3xl lg:text-4xl tracking-tight font-bold text-foreground mb-6 font-space">
+              <h2 className="text-3xl lg:text-4xl tracking-tight font-medium text-foreground mb-6 slide-in-left delay-200">
                 Spatializing the Internet
               </h2>
-              <div className="space-y-4 text-muted-foreground font-inter">
+              <div className="space-y-4 text-muted-foreground slide-in-left delay-300">
                 <p>
                   Floats XR is an immersive technology studio on a mission to spatialize the internet. 
                   Founded by <strong>Iyobosa Rehoboth</strong>, we operate at the intersection of 3D design, 
@@ -31,26 +31,26 @@ const About = () => {
             </div>
             
             <div className="grid sm:grid-cols-2 gap-6">
-              <div className="p-6 rounded-xl border border-border bg-card hover:bg-muted/50 transition-all duration-300">
+              <div className="p-6 rounded-xl border border-border bg-background hover:shadow-lg transition-shadow scale-in delay-400">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 flex bg-primary/20 rounded-lg items-center justify-center">
                     <Globe className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-card-foreground font-space">Global</p>
+                    <p className="text-2xl font-medium text-foreground">Global</p>
                     <p className="text-sm text-muted-foreground">Footprint</p>
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground">Active across Africa, Europe, and North America</p>
               </div>
               
-              <div className="p-6 rounded-xl border border-border bg-card hover:bg-muted/50 transition-all duration-300">
+              <div className="p-6 rounded-xl border border-border bg-background hover:shadow-lg transition-shadow scale-in delay-500">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 flex bg-accent/20 rounded-lg items-center justify-center">
                     <Zap className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <p className="text-2xl font-bold text-card-foreground font-space">Rapid</p>
+                    <p className="text-2xl font-medium text-foreground">Rapid</p>
                     <p className="text-sm text-muted-foreground">Prototyping</p>
                   </div>
                 </div>
@@ -58,40 +58,49 @@ const About = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-foreground font-space">Why Partner with Us?</h3>
+            <div className="space-y-4 slide-in-left delay-600">
+              <h3 className="text-xl font-semibold text-foreground">Why Partner with Us?</h3>
               <div className="grid gap-3">
                 <div className="flex items-center gap-3">
                   <Users className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground font-inter">100% XR-native studio with hybrid design, dev, and AI fluency</span>
+                  <span className="text-muted-foreground">100% XR-native studio with hybrid design, dev, and AI fluency</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Globe className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground font-inter">Hardware agnostic — works on any screen or headset</span>
+                  <span className="text-muted-foreground">Hardware agnostic — works on any screen or headset</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Award className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground font-inter">Every experience is both emotionally resonant and technically robust</span>
+                  <span className="text-muted-foreground">Every experience is both emotionally resonant and technically robust</span>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-deep">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-4">
               <img 
-                src={studioImage} 
-                alt="Floats XR Studio" 
-                className="w-full h-[600px] object-cover"
+                src="https://images.unsplash.com/photo-1675981004381-6305f7dd07fe?w=800&q=80" 
+                alt="Team collaboration" 
+                className="rounded-xl hover:scale-105 transition-transform duration-300 object-cover w-full h-auto blur-in delay-200"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
-              
-              <div className="absolute bottom-6 left-6 backdrop-blur-sm rounded-xl p-4 shadow-lg bg-card/90 border border-border">
-                <div className="text-center">
-                  <p className="text-sm font-medium text-card-foreground mb-1">Studio Locations</p>
-                  <p className="text-lg font-bold text-primary font-space">London & Lagos</p>
-                </div>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1642923051153-07d4c98fe203?w=800&q=80" 
+                alt="Design process" 
+                className="rounded-xl hover:scale-105 transition-transform duration-300 object-cover w-full h-auto blur-in delay-400"
+              />
+            </div>
+            <div className="space-y-4 pt-8">
+              <img 
+                src="https://images.unsplash.com/photo-1650473395434-8674d953ef2f?w=800&q=80" 
+                alt="Creative workspace" 
+                className="rounded-xl hover:scale-105 transition-transform duration-300 object-cover w-full h-auto blur-in delay-300"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1644251966613-170a26996adb?w=800&q=80" 
+                alt="Strategy session" 
+                className="rounded-xl hover:scale-105 transition-transform duration-300 object-cover w-full h-auto blur-in delay-500"
+              />
             </div>
           </div>
         </div>

@@ -41,16 +41,16 @@ const capabilities = [
 
 const Capabilities = () => {
   return (
-    <section id="capabilities" className="py-20 bg-gradient-cosmic">
+    <section id="capabilities" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-sm font-medium uppercase tracking-wider text-primary mb-4">
+          <p className="text-sm font-medium uppercase tracking-wider text-primary mb-4 slide-in-up text-primary">
             What We Do
           </p>
-          <h2 className="text-3xl lg:text-4xl tracking-tight font-bold text-foreground mb-6 font-space">
+          <h2 className="text-3xl lg:text-4xl tracking-tight font-medium text-foreground mb-6 slide-in-up delay-200">
             Immersive Tech That Moves
           </h2>
-          <p className="text-lg text-muted-foreground font-inter">
+          <p className="text-lg text-muted-foreground slide-in-up delay-300">
             We work across the entire XR pipeline — from spatial concept to real-time deployment — combining creativity with engineering precision.
           </p>
         </div>
@@ -61,15 +61,16 @@ const Capabilities = () => {
             return (
               <div 
                 key={index}
-                className="p-8 rounded-xl border border-border bg-card hover:bg-muted/50 transition-all duration-300 hover:shadow-accent hover:-translate-y-1 group"
+                className="p-8 rounded-xl border border-border bg-background hover:shadow-lg transition-all duration-200 hover:-translate-y-1 scale-in"
+                style={{ animationDelay: `${0.4 + index * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center mb-6 group-hover:shadow-primary transition-all duration-300">
-                  <Icon className="w-6 h-6 text-primary-foreground" />
+                <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-6">
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-card-foreground font-space">
+                <h3 className="text-xl font-semibold mb-3 text-foreground">
                   {capability.title}
                 </h3>
-                <p className="mb-4 text-muted-foreground font-inter">
+                <p className="mb-4 text-muted-foreground">
                   {capability.description}
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">

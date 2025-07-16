@@ -1,18 +1,15 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b bg-background/80 border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b bg-black/80 border-muted slide-in-up animate-in">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">F</span>
-            </div>
-            <span className="text-xl font-bold tracking-tight font-space text-foreground">
+            <span className="text-xl font-semibold tracking-tight text-foreground">
               Floats XR
             </span>
           </div>
@@ -38,9 +35,9 @@ const Navigation = () => {
           <div className="flex items-center gap-4">
             <a 
               href="#contact" 
-              className="hidden sm:inline-flex items-center gap-2 px-6 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-primary"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 bg-foreground text-background hover:bg-muted-foreground"
             >
-              Start a Project
+              Let's Talk <ArrowRight className="w-4 h-4" />
             </a>
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -53,7 +50,7 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border">
+          <div className="md:hidden mt-4 pb-4 border-t border-muted">
             <div className="flex flex-col space-y-4 pt-4">
               <a href="#home" className="text-sm font-medium text-muted-foreground hover:text-primary">Home</a>
               <a href="#capabilities" className="text-sm font-medium text-muted-foreground hover:text-primary">Capabilities</a>
@@ -62,9 +59,9 @@ const Navigation = () => {
               <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-primary">About</a>
               <a 
                 href="#contact" 
-                className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full text-sm font-medium bg-gradient-primary text-primary-foreground"
+                className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full text-sm font-medium bg-foreground text-background"
               >
-                Start a Project
+                Let's Talk
               </a>
             </div>
           </div>
