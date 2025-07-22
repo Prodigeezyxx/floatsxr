@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 
@@ -12,7 +13,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/8185c937-ae89-40ef-8d9b-4c27d981d7ec.png" 
               alt="Floats XR" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           

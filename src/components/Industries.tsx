@@ -1,3 +1,4 @@
+
 import { Megaphone, Home, Heart, GraduationCap, MapPin } from 'lucide-react';
 
 const industries = [
@@ -33,6 +34,17 @@ const industries = [
   }
 ];
 
+const clients = [
+  "MarkHack 3.0",
+  "CHIVAS", 
+  "techcabal",
+  "Tyfe",
+  "PAAL AI",
+  "MARTELL",
+  "Meta",
+  "EMPIRE"
+];
+
 const Industries = () => {
   return (
     <section id="industries" className="py-20 bg-muted">
@@ -49,7 +61,7 @@ const Industries = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {industries.map((industry, index) => {
             const Icon = industry.icon;
             return (
@@ -78,6 +90,30 @@ const Industries = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* Trusted Partners Section */}
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <p className="text-sm font-medium uppercase tracking-wider text-primary mb-4 slide-in-up delay-600">
+            Trusted Partners
+          </p>
+          <h3 className="text-2xl lg:text-3xl tracking-tight font-medium text-foreground mb-6 slide-in-up delay-700">
+            Brands That Trust Our Vision
+          </h3>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 items-center">
+          {clients.map((client, index) => (
+            <div 
+              key={index}
+              className="flex items-center justify-center p-6 rounded-xl border border-border bg-background/50 hover:bg-background transition-all duration-200 hover:scale-105 slide-in-up"
+              style={{ animationDelay: `${0.8 + index * 0.1}s` }}
+            >
+              <span className="font-medium text-foreground text-center text-sm lg:text-base">
+                {client}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
