@@ -35,14 +35,14 @@ const industries = [
 ];
 
 const clients = [
-  { name: "MarkHack 3.0", logo: "/lovable-uploads/539a919c-dce3-4302-9bd9-35ea4c006e63.png" },
-  { name: "CHIVAS", logo: "/lovable-uploads/f60bf69d-ec53-4159-a91b-12c9e142d8b7.png" },
-  { name: "techcabal", logo: "/lovable-uploads/ce316f6d-7e4a-4d48-9a74-32998cecf49e.png" },
-  { name: "Tyfe", logo: "/lovable-uploads/9160221a-03aa-473b-ac93-8afd13a01cbc.png" },
-  { name: "PAAL AI", logo: "/lovable-uploads/6b8dbd0a-994b-4a7f-b1e6-e003bb6806d8.png" },
-  { name: "MARTELL", logo: "/lovable-uploads/b5691792-6679-46b1-990f-4ed75a3522d3.png" },
-  { name: "Meta", logo: "/lovable-uploads/48199687-3eb1-4844-a1cd-44df75b6a214.png" },
-  { name: "EMPIRE", logo: "/lovable-uploads/c10623e6-5003-465d-9f7f-06e21bb0fe0b.png" }
+  "MarkHack 3.0",
+  "CHIVAS", 
+  "techcabal",
+  "Tyfe",
+  "PAAL AI",
+  "MARTELL",
+  "Meta",
+  "EMPIRE"
 ];
 
 const Industries = () => {
@@ -109,11 +109,9 @@ const Industries = () => {
               className="flex items-center justify-center p-6 rounded-xl border border-border bg-background/50 hover:bg-background transition-all duration-200 hover:scale-105 slide-in-up"
               style={{ animationDelay: `${0.8 + index * 0.1}s` }}
             >
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="max-h-8 max-w-full object-contain filter brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-200"
-              />
+              <span className="font-medium text-foreground text-center text-sm lg:text-base">
+                {client}
+              </span>
             </div>
           ))}
         </div>
