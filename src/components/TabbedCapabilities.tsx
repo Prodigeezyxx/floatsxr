@@ -8,6 +8,7 @@ const capabilityTabs = [
     id: 'immersive',
     label: 'AR/VR',
     icon: Headphones,
+    heroImage: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1024&q=80', // Placeholder, replace with AI-generated
     capabilities: [
       {
         icon: Smartphone,
@@ -27,6 +28,7 @@ const capabilityTabs = [
     id: 'intelligent',
     label: '3D/AI',
     icon: Brain,
+    heroImage: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1024&q=80', // Placeholder, replace with AI-generated
     capabilities: [
       {
         icon: Box,
@@ -46,6 +48,7 @@ const capabilityTabs = [
     id: 'spatial',
     label: 'Spatial Tech',
     icon: Eye,
+    heroImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1024&q=80', // Placeholder, replace with AI-generated
     capabilities: [
       {
         icon: Building2,
@@ -100,6 +103,27 @@ const TabbedCapabilities = () => {
 
           {capabilityTabs.map((tab) => (
             <TabsContent key={tab.id} value={tab.id} className="mt-0">
+              {/* Hero Image Section */}
+              <div className="mb-12 rounded-2xl overflow-hidden">
+                <div 
+                  className="h-64 md:h-80 bg-cover bg-center relative"
+                  style={{ backgroundImage: `url(${tab.heroImage})` }}
+                >
+                  <div className="absolute inset-0 bg-background/60 flex items-center justify-center">
+                    <div className="text-center text-foreground">
+                      <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4">
+                        <tab.icon className="w-8 h-8 text-primary" />
+                      </div>
+                      <h3 className="text-2xl font-semibold mb-2">{tab.label} Technologies</h3>
+                      <p className="text-muted-foreground max-w-md">
+                        Cutting-edge solutions for immersive experiences
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Capabilities Grid */}
               <div className="grid md:grid-cols-2 gap-8">
                 {tab.capabilities.map((capability, index) => {
                   const Icon = capability.icon;

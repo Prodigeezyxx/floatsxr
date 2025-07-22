@@ -80,6 +80,25 @@ const ImmersiveBooths = () => {
           </p>
         </div>
 
+        {/* Showcase Image */}
+        <div className="mb-20 rounded-2xl overflow-hidden">
+          <div 
+            className="h-96 bg-cover bg-center relative"
+            style={{ 
+              backgroundImage: `url(https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1200&q=80)` // Placeholder for AI-generated booth image
+            }}
+          >
+            <div className="absolute inset-0 bg-background/40 flex items-center justify-center">
+              <div className="text-center text-foreground max-w-2xl px-6">
+                <h3 className="text-3xl font-semibold mb-4">Experience the Future</h3>
+                <p className="text-lg text-muted-foreground">
+                  Immersive booth experiences that captivate and engage your audience
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* How It Works */}
         <div className="mb-20">
           <div className="text-center mb-12">
