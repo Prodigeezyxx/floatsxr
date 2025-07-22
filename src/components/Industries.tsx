@@ -35,14 +35,38 @@ const industries = [
 ];
 
 const clients = [
-  "MarkHack 3.0",
-  "CHIVAS", 
-  "techcabal",
-  "Tyfe",
-  "PAAL AI",
-  "MARTELL",
-  "Meta",
-  "EMPIRE"
+  {
+    name: "MarkHack 3.0",
+    logo: "/lovable-uploads/f773b0ff-542d-4239-a7c2-23d66681648c.png"
+  },
+  {
+    name: "CHIVAS",
+    logo: "/lovable-uploads/e308b5d8-33a0-4c0a-8cd8-05dde35e786b.png"
+  },
+  {
+    name: "techcabal",
+    logo: "/lovable-uploads/d3eedd82-8795-42fe-aba1-0209a81cc471.png"
+  },
+  {
+    name: "Tyfe",
+    logo: "/lovable-uploads/880b26fc-6116-4346-8853-9ed4f6a8c222.png"
+  },
+  {
+    name: "PAAL AI",
+    logo: "/lovable-uploads/040d4f51-ca0d-474f-83d4-80bcb49ec26f.png"
+  },
+  {
+    name: "MARTELL",
+    logo: "/lovable-uploads/e770ce4c-5041-4b45-9fe7-52b6eb8292a7.png"
+  },
+  {
+    name: "Meta",
+    logo: "/lovable-uploads/fcb6931a-a4e4-4127-adba-2aa23a2e2423.png"
+  },
+  {
+    name: "EMPIRE",
+    logo: "/lovable-uploads/6820a230-32e1-4c4a-a8c6-c8df145671f8.png"
+  }
 ];
 
 const Industries = () => {
@@ -109,9 +133,11 @@ const Industries = () => {
               className="flex items-center justify-center p-6 rounded-xl border border-border bg-background/50 hover:bg-background transition-all duration-200 hover:scale-105 slide-in-up"
               style={{ animationDelay: `${0.8 + index * 0.1}s` }}
             >
-              <span className="font-medium text-foreground text-center text-sm lg:text-base">
-                {client}
-              </span>
+              <img 
+                src={client.logo} 
+                alt={client.name}
+                className="h-8 w-auto max-w-full object-contain filter brightness-0 invert dark:brightness-100 dark:invert-0"
+              />
             </div>
           ))}
         </div>
