@@ -2,10 +2,10 @@
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
-import Capabilities from '@/components/Capabilities';
+import TabbedCapabilities from '@/components/TabbedCapabilities';
 import ImmersiveBooths from '@/components/ImmersiveBooths';
-import Process from '@/components/Process';
-import Industries from '@/components/Industries';
+import StreamlinedProcess from '@/components/StreamlinedProcess';
+import OptimizedIndustries from '@/components/OptimizedIndustries';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -52,10 +52,10 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground antialiased">
       <Navigation />
       <Hero />
-      <Capabilities />
+      <TabbedCapabilities />
       <ImmersiveBooths />
-      <Process />
-      <Industries />
+      <StreamlinedProcess />
+      <OptimizedIndustries />
       <About />
       <Contact />
       <Footer />

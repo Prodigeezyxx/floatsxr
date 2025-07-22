@@ -1,3 +1,4 @@
+
 import { ArrowRight, Play } from 'lucide-react';
 import heroImage from '@/assets/hero-xr.jpg';
 
@@ -14,11 +15,11 @@ const Hero = () => {
                   3D
                 </span>
               </h1>
-              <p className="text-lg max-w-xl text-muted-foreground slide-in-left delay-300 animate-in">
-                Immersive experiences, XR activations, and digital twins that move people — and markets.
+              <p className="text-xl max-w-xl text-muted-foreground slide-in-left delay-300 animate-in">
+                Immersive XR experiences that move people — and markets.
               </p>
-              <p className="text-base max-w-xl text-muted-foreground slide-in-left delay-300 animate-in">
-                Floats XR is a full-stack immersive studio blending 3D, AI, and spatial computing to deliver world-class XR experiences — anywhere.
+              <p className="text-base max-w-xl text-muted-foreground/80 slide-in-left delay-300 animate-in">
+                Full-stack immersive studio blending 3D, AI, and spatial computing.
               </p>
             </div>
             
@@ -33,28 +34,21 @@ const Hero = () => {
                 href="#capabilities" 
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-medium transition-all duration-200 bg-muted text-foreground hover:bg-muted/80"
               >
-                Explore Capabilities <Play className="w-5 h-5" />
+                See Capabilities
               </a>
             </div>
             
-            <div className="flex items-center gap-6 slide-in-left delay-500 animate-in">
-              <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border-2 border-background">
-                  <span className="text-sm font-medium text-primary">AR</span>
+            <div className="flex items-center gap-8 slide-in-left delay-500 animate-in">
+              <div className="flex items-center gap-3">
+                <div className="flex -space-x-1">
+                  <div className="w-8 h-8 rounded-full bg-primary/30 flex items-center justify-center text-xs font-bold text-primary">AR</div>
+                  <div className="w-8 h-8 rounded-full bg-accent/30 flex items-center justify-center text-xs font-bold text-accent">VR</div>
+                  <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-xs font-bold text-secondary-foreground">3D</div>
                 </div>
-                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center border-2 border-background">
-                  <span className="text-sm font-medium text-accent">VR</span>
-                </div>
-                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center border-2 border-background">
-                  <span className="text-sm font-medium text-secondary-foreground">3D</span>
-                </div>
-                <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center border-2 border-background">
-                  <span className="text-sm font-medium text-muted-foreground">AI</span>
-                </div>
+                <span className="text-sm font-medium text-foreground">Full XR Pipeline</span>
               </div>
-              <div>
-                <p className="text-sm font-medium text-foreground">Full XR Pipeline</p>
-                <p className="text-sm text-muted-foreground">From concept to deployment</p>
+              <div className="text-sm text-muted-foreground">
+                Concept → Deployment
               </div>
             </div>
           </div>
@@ -67,28 +61,18 @@ const Hero = () => {
                 className="w-full h-[500px] object-cover"
               />
               
-              {/* Floating Stats */}
+              {/* Floating Stats - Simplified */}
               <div className="absolute top-6 right-6 backdrop-blur-sm rounded-xl p-4 shadow-lg bg-black/90 slide-in-right delay-800 animate-in">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex bg-neutral-800 rounded-full items-center justify-center">
-                    <span className="text-primary text-sm font-bold">3D</span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">Immersive Rate</p>
-                    <p className="text-lg font-bold text-foreground">+250%</p>
-                  </div>
+                <div className="text-center">
+                  <p className="text-2xl font-bold text-primary">+250%</p>
+                  <p className="text-xs text-muted-foreground">Engagement</p>
                 </div>
               </div>
               
               <div className="absolute bottom-6 left-6 backdrop-blur-sm rounded-xl p-4 shadow-lg bg-black/90 slide-in-left delay-900 animate-in">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex bg-neutral-800 rounded-full items-center justify-center">
-                    <span className="text-accent text-sm font-bold">XR</span>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">Engagement</p>
-                    <p className="text-lg font-bold text-foreground">+180%</p>
-                  </div>
+                <div className="text-center">
+                  <p className="text-2xl font-bold text-accent">Global</p>
+                  <p className="text-xs text-muted-foreground">Reach</p>
                 </div>
               </div>
             </div>
