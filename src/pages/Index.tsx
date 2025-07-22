@@ -1,7 +1,9 @@
+
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import Capabilities from '@/components/Capabilities';
+import ImmersiveBooths from '@/components/ImmersiveBooths';
 import Process from '@/components/Process';
 import Industries from '@/components/Industries';
 import About from '@/components/About';
@@ -51,6 +53,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <Capabilities />
+      <ImmersiveBooths />
       <Process />
       <Industries />
       <About />

@@ -24,6 +24,9 @@ const Navigation = () => {
             <a href="#capabilities" className="text-sm font-medium transition-colors text-muted-foreground hover:text-primary">
               Capabilities
             </a>
+            <a href="#immersive-booths" className="text-sm font-medium transition-colors text-muted-foreground hover:text-primary">
+              Immersive Booths
+            </a>
             <a href="#process" className="text-sm font-medium transition-colors text-muted-foreground hover:text-primary">
               Process
             </a>
@@ -57,6 +60,7 @@ const Navigation = () => {
             <div className="flex flex-col space-y-4 pt-4">
               <a href="#home" className="text-sm font-medium text-muted-foreground hover:text-primary">Home</a>
               <a href="#capabilities" className="text-sm font-medium text-muted-foreground hover:text-primary">Capabilities</a>
+              <a href="#immersive-booths" className="text-sm font-medium text-muted-foreground hover:text-primary">Immersive Booths</a>
               <a href="#process" className="text-sm font-medium text-muted-foreground hover:text-primary">Process</a>
               <a href="#industries" className="text-sm font-medium text-muted-foreground hover:text-primary">Industries</a>
               <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-primary">About</a>
