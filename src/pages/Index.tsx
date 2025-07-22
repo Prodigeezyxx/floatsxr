@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
@@ -9,6 +8,7 @@ import OptimizedIndustries from '@/components/OptimizedIndustries';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import ImageGenerator from '@/components/ImageGenerator';
 
 const Index = () => {
   useEffect(() => {
@@ -53,6 +53,14 @@ const Index = () => {
       <Navigation />
       <Hero />
       <TabbedCapabilities />
+      
+      {/* Temporary Image Generator for Development */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ImageGenerator />
+        </div>
+      </section>
+
       <ImmersiveBooths />
       <StreamlinedProcess />
       <OptimizedIndustries />
