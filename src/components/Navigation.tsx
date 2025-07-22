@@ -9,9 +9,11 @@ const Navigation = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-semibold tracking-tight text-foreground">
-              Floats XR
-            </span>
+            <img 
+              src="/lovable-uploads/8185c937-ae89-40ef-8d9b-4c27d981d7ec.png" 
+              alt="Floats XR" 
+              className="h-8 w-auto"
+            />
           </div>
           
           <div className="hidden md:flex items-center gap-8">
