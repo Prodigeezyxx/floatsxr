@@ -24,7 +24,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 slide-in-left delay-400 animate-in">
               <a 
-                href="#contact" 
+                href="https://calendly.com/hello-floatsanywhere/start" 
                 className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full font-medium transition-all duration-200 hover:scale-105 text-black bg-primary hover:bg-primary/90"
               >
                 Start a Project <ArrowRight className="w-5 h-5" />

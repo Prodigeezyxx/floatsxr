@@ -40,7 +40,7 @@ const Navigation = () => {
           
           <div className="flex items-center gap-4">
             <a 
-              href="#contact" 
+              href="https://calendly.com/hello-floatsanywhere/start" 
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 bg-foreground text-background hover:bg-muted-foreground"
             >
               Let's Talk <ArrowRight className="w-4 h-4" />
@@ -65,7 +65,7 @@ const Navigation = () => {
               <a href="#industries" className="text-sm font-medium text-muted-foreground hover:text-primary">Industries</a>
               <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-primary">About</a>
               <a 
-                href="#contact" 
+                href="https://calendly.com/hello-floatsanywhere/start" 
                 className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full text-sm font-medium bg-foreground text-background"
               >
                 Let's Talk

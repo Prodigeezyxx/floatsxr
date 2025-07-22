@@ -180,7 +180,7 @@ const ImmersiveBooths = () => {
               Contact us to explore custom booth designs, technical requirements and on‑site demos.
             </p>
             <a 
-              href="#contact" 
+              href="https://calendly.com/hello-floatsanywhere/start" 
               className="inline-flex items-center gap-2 px-8 py-3 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 bg-primary text-primary-foreground hover:bg-primary/90"
             >
               Get Started
