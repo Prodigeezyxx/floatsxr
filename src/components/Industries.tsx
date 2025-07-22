@@ -35,38 +35,14 @@ const industries = [
 ];
 
 const clients = [
-  {
-    name: "MarkHack 3.0",
-    logo: "/lovable-uploads/f773b0ff-542d-4239-a7c2-23d66681648c.png"
-  },
-  {
-    name: "CHIVAS",
-    logo: "/lovable-uploads/e308b5d8-33a0-4c0a-8cd8-05dde35e786b.png"
-  },
-  {
-    name: "techcabal",
-    logo: "/lovable-uploads/d3eedd82-8795-42fe-aba1-0209a81cc471.png"
-  },
-  {
-    name: "Tyfe",
-    logo: "/lovable-uploads/880b26fc-6116-4346-8853-9ed4f6a8c222.png"
-  },
-  {
-    name: "PAAL AI",
-    logo: "/lovable-uploads/040d4f51-ca0d-474f-83d4-80bcb49ec26f.png"
-  },
-  {
-    name: "MARTELL",
-    logo: "/lovable-uploads/e770ce4c-5041-4b45-9fe7-52b6eb8292a7.png"
-  },
-  {
-    name: "Meta",
-    logo: "/lovable-uploads/fcb6931a-a4e4-4127-adba-2aa23a2e2423.png"
-  },
-  {
-    name: "EMPIRE",
-    logo: "/lovable-uploads/6820a230-32e1-4c4a-a8c6-c8df145671f8.png"
-  }
+  { name: "MarkHack 3.0", logo: "/lovable-uploads/539a919c-dce3-4302-9bd9-35ea4c006e63.png" },
+  { name: "CHIVAS", logo: "/lovable-uploads/f60bf69d-ec53-4159-a91b-12c9e142d8b7.png" },
+  { name: "techcabal", logo: "/lovable-uploads/ce316f6d-7e4a-4d48-9a74-32998cecf49e.png" },
+  { name: "Tyfe", logo: "/lovable-uploads/9160221a-03aa-473b-ac93-8afd13a01cbc.png" },
+  { name: "PAAL AI", logo: "/lovable-uploads/6b8dbd0a-994b-4a7f-b1e6-e003bb6806d8.png" },
+  { name: "MARTELL", logo: "/lovable-uploads/b5691792-6679-46b1-990f-4ed75a3522d3.png" },
+  { name: "Meta", logo: "/lovable-uploads/48199687-3eb1-4844-a1cd-44df75b6a214.png" },
+  { name: "EMPIRE", logo: "/lovable-uploads/c10623e6-5003-465d-9f7f-06e21bb0fe0b.png" }
 ];
 
 const Industries = () => {
@@ -133,10 +109,10 @@ const Industries = () => {
               className="flex items-center justify-center p-6 rounded-xl border border-border bg-background/50 hover:bg-background transition-all duration-200 hover:scale-105 slide-in-up"
               style={{ animationDelay: `${0.8 + index * 0.1}s` }}
             >
-              <img 
-                src={client.logo} 
+              <img
+                src={client.logo}
                 alt={client.name}
-                className="h-8 w-auto max-w-full object-contain filter brightness-0 invert dark:brightness-100 dark:invert-0"
+                className="max-h-8 max-w-full object-contain filter brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-200"
               />
             </div>
           ))}
