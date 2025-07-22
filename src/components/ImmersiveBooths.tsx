@@ -1,5 +1,5 @@
 
-import { Monitor, Layers, Hand, Volume2, Users, Store, Building, Museum } from 'lucide-react';
+import { Monitor, Layers, Hand, Volume2, Users, Store, Building, Landmark } from 'lucide-react';
 
 const howItWorksFeatures = [
   {
@@ -60,7 +60,7 @@ const perfectForCases = [
     description: "Elevate training, launches and town halls with controlled, branded spaces."
   },
   {
-    icon: Museum,
+    icon: Landmark,
     title: "Exhibitions & Museums",
     description: "Bring art, history and science to life through immersive storytelling."
   }
