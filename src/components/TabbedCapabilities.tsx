@@ -2,13 +2,16 @@
 import { useState } from 'react';
 import { Smartphone, Headphones, Box, Brain, Building2, Eye } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import arVrImage from "@/assets/ar-vr-split.jpg";
+import aiWorkspaceImage from "@/assets/3d-ai-workspace.jpg";
+import spatialTechImage from "@/assets/spatial-tech-city.jpg";
 
 const capabilityTabs = [
   {
     id: 'immersive',
     label: 'AR/VR',
     icon: Headphones,
-    heroImage: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1024&q=80', // Placeholder, replace with AI-generated
+    heroImage: arVrImage,
     capabilities: [
       {
         icon: Smartphone,
@@ -28,7 +31,7 @@ const capabilityTabs = [
     id: 'intelligent',
     label: '3D/AI',
     icon: Brain,
-    heroImage: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1024&q=80', // Placeholder, replace with AI-generated
+    heroImage: aiWorkspaceImage,
     capabilities: [
       {
         icon: Box,
@@ -48,7 +51,7 @@ const capabilityTabs = [
     id: 'spatial',
     label: 'Spatial Tech',
     icon: Eye,
-    heroImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1024&q=80', // Placeholder, replace with AI-generated
+    heroImage: spatialTechImage,
     capabilities: [
       {
         icon: Building2,

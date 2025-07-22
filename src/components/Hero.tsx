@@ -1,9 +1,9 @@
 
 import { ArrowRight } from 'lucide-react';
+import heroImage from "@/assets/hero-vr-professional.jpg";
 
 const Hero = () => {
-  // Default to existing image, can be replaced with AI-generated one
-  const heroBackground = "https://cdn.midjourney.com/d5ecaf44-94b7-47f5-9bb8-5d1967358128/0_0.png?w=800&q=80";
+  const heroBackground = heroImage;
   
   return (
     <section id="home" className="relative overflow-hidden bg-background pt-24 pb-16">
@@ -72,7 +72,7 @@ const Hero = () => {
               <div 
                 className="w-full h-[500px] bg-cover bg-center"
                 style={{ 
-                  backgroundImage: `url(https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&q=80)`,
+                  backgroundImage: `url(${heroImage})`,
                 }}
               >
                 {/* Floating Stats */}

@@ -1,5 +1,6 @@
 
 import { Monitor, Layers, Hand, Volume2, Users, Store, Building, Landmark } from 'lucide-react';
+import boothImage from "@/assets/immersive-booth-exhibition.jpg";
 
 const howItWorksFeatures = [
   {
@@ -85,7 +86,7 @@ const ImmersiveBooths = () => {
           <div 
             className="h-96 bg-cover bg-center relative"
             style={{ 
-              backgroundImage: `url(https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1200&q=80)` // Placeholder for AI-generated booth image
+              backgroundImage: `url(${boothImage})`
             }}
           >
             <div className="absolute inset-0 bg-background/40 flex items-center justify-center">
