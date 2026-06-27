@@ -41,24 +41,24 @@ export function IntegrationSection() {
               Explore Integrations
             </Link>
           </div>
-          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
+          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-6 gap-y-10 items-center justify-items-center">
             {integrations.map((tool) => (
               <div
                 key={tool.name}
-                className="flex flex-col items-center gap-2 text-inkwell/40 group"
+                className="flex flex-col items-center gap-3 text-inkwell/40 group"
               >
                 {tool.src ? (
                   <img
                     src={tool.src}
                     alt={tool.name}
-                    className="h-8 w-auto opacity-40 group-hover:opacity-70 transition-opacity"
+                    className="h-8 w-auto opacity-45 group-hover:opacity-80 transition-opacity"
                   />
                 ) : (
-                  <div className="group-hover:text-inkwell/70 transition-colors">
+                  <div className="text-inkwell/40 group-hover:text-inkwell/70 transition-colors">
                     {fallbackLogo(tool.name)}
                   </div>
                 )}
-                <span className="text-[11px] font-medium tracking-wider">{tool.name}</span>
+                <span className="text-[11px] font-medium text-inkwell/40 group-hover:text-inkwell/65 transition-colors">{tool.name}</span>
               </div>
             ))}
           </div>

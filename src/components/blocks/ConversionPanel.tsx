@@ -22,15 +22,16 @@ export function ConversionPanel({
   return (
     <section className="bg-ecru py-16 md:py-24">
       <div className="grid-container">
-        <div className="bg-cobalt rounded-[24px] overflow-hidden">
-          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-12 lg:p-16">
+        <div className="relative bg-cobalt rounded-2xl overflow-hidden shadow-glow">
+          <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-poppy/10 pointer-events-none" />
+          <div className="relative grid md:grid-cols-2 gap-8 items-center p-8 md:p-12 lg:p-16">
             <FadeIn direction="left">
               <h2 className="heading-1 text-white max-w-[500px]">
                 {headline}
               </h2>
               <Link
                 href={ctaHref}
-                className="inline-flex items-center px-6 py-3 rounded-lg bg-white text-inkwell text-sm font-medium hover:bg-white/90 transition-colors mt-8"
+                className="inline-flex items-center px-6 py-3 rounded-lg bg-white text-inkwell text-sm font-medium hover:bg-white/90 hover:shadow-elevated transition-all mt-8 min-h-[44px]"
               >
                 {ctaLabel}
               </Link>

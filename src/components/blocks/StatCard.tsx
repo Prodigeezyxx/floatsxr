@@ -23,8 +23,10 @@ export function StatCard({
     <FadeIn delay={delay}>
       <div
         className={cn(
-          "rounded-[24px] p-6 md:p-8",
-          variant === "ecru" ? "bg-ecru" : "bg-mist",
+          "rounded-2xl p-6 md:p-8 border border-transparent transition-all duration-300",
+          variant === "ecru"
+            ? "bg-ecru hover:border-mist/40"
+            : "bg-mist/60 hover:border-cobalt/10",
           className
         )}
       >
