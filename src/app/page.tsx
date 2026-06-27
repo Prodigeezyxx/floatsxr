@@ -89,12 +89,12 @@ export default function Home() {
             label: "Brand Activations",
             content: (
               <>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <h3 className="heading-3 text-inkwell mb-2">Brand Activations</h3>
                   <p className="caption text-inkwell/70">Measure dwell time, engagement depth, and content performance across every touchpoint. Know which moments drove the most meaningful interaction.</p>
                   <Link href="/solutions/brand-activations" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
                 </div>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <StatCard variant="mist">
                     Brands using realmspace see <Highlight>2.4× higher sponsor retention</Highlight> when they can show activation telemetry to stakeholders.
                   </StatCard>
@@ -106,12 +106,12 @@ export default function Home() {
             label: "Trade Shows",
             content: (
               <>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <h3 className="heading-3 text-inkwell mb-2">Trade Shows & Conferences</h3>
                   <p className="caption text-inkwell/70">Multi-booth measurement across an entire show floor. Understand traffic patterns, peak hours, and which exhibits drove the most engagement.</p>
                   <Link href="/solutions/trade-shows-and-conferences" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
                 </div>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <StatCard variant="mist">
                     Exhibitors who used realmspace reported <Highlight>86% faster close times</Highlight> with leads from their booth.
                   </StatCard>
@@ -123,12 +123,12 @@ export default function Home() {
             label: "Retail Flagship",
             content: (
               <>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <h3 className="heading-3 text-inkwell mb-2">Retail Flagship</h3>
                   <p className="caption text-inkwell/70">Permanent installation measurement for flagship stores. Understand how visitors move through your space, which displays convert, and what drives repeat visits.</p>
                   <Link href="/solutions/retail-flagship" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
                 </div>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <StatCard variant="mist">
                     Flagship stores using realmspace saw <Highlight>3.2× more engagement</Highlight> with interactive displays within the first month.
                   </StatCard>
@@ -140,12 +140,12 @@ export default function Home() {
             label: "Sponsorship",
             content: (
               <>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <h3 className="heading-3 text-inkwell mb-2">Sponsor Measurement</h3>
                   <p className="caption text-inkwell/70">Give your sponsors a reason to come back. Show them exactly how many people engaged with their activation, for how long, and what action they took.</p>
                   <Link href="/solutions/sponsor-measurement" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
                 </div>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <StatCard variant="mist">
                     Sponsors who received realmspace reports renewed at <Highlight>2.4× the rate</Highlight> of those who didn&apos;t.
                   </StatCard>
@@ -157,12 +157,12 @@ export default function Home() {
             label: "Venue Ops",
             content: (
               <>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <h3 className="heading-3 text-inkwell mb-2">Venue Operations</h3>
                   <p className="caption text-inkwell/70">Ongoing telemetry for venue operators. Understand traffic flow, bottleneck zones, and how to optimise your space for both visitors and exhibitors.</p>
                   <Link href="/solutions/venue-operations" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
                 </div>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <StatCard variant="mist">
                     Venues using realmspace reduced <Highlight>underutilised space by 34%</Highlight> in the first quarter.
                   </StatCard>
@@ -174,12 +174,12 @@ export default function Home() {
             label: "Measurable ROI",
             content: (
               <>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <h3 className="heading-3 text-inkwell mb-2">Measurable ROI</h3>
                   <p className="caption text-inkwell/70">For the C-suite who needs defensible spend. Connect spatial behaviour to business outcomes with clear, auditable data. No anecdotes. No estimates.</p>
                   <Link href="/solutions/measurable-roi" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
                 </div>
-                <div className="bg-white rounded-lg p-6 border border-mist/20">
+                <div className="bg-white rounded-lg p-6 border border-mist/20 overflow-hidden">
                   <StatCard variant="mist">
                     Organisations using realmspace achieved <Highlight>3.4× ROI</Highlight> on their activation spend within the first two quarters.
                   </StatCard>

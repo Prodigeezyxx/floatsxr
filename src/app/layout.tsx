@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-ecru text-inkwell font-sans">
+      <body className="min-h-full flex flex-col bg-ecru text-inkwell font-sans overflow-x-hidden">
         <SiteShell>{children}</SiteShell>
       </body>
     </html>
