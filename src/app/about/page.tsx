@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About — Floats",
-  description: "Floats is a spatial intelligence company. We build realmspace — the privacy-first intelligence layer for physical experiences.",
+  description: "Floats is a spatial intelligence company. We build realmspace — the intelligence layer for physical experiences.",
 };
 
 export default function AboutPage() {
@@ -26,7 +26,7 @@ export default function AboutPage() {
               &ldquo;That was amazing — but how do I prove it worked?&rdquo;
             </p>
             <p className="body-lg text-inkwell/70 mt-4 leading-relaxed">
-              That question led us to build realmspace: a privacy-first intelligence layer that
+              That question led us to build realmspace: a intelligence layer that
               captures what people actually do in a physical space. Today, Floats is a spatial
               intelligence company. We still build beautiful activations — but now we measure
               everything they do.
@@ -74,7 +74,7 @@ export default function AboutPage() {
       <ConversionPanel
         headline="Want to know more about Floats?"
         ctaLabel="Talk to our team"
-        imageSrc="/images/studio-workspace.jpg"
+        imageSrc="/images/placeholders/studio-workspace.svg"
         imageAlt="Floats team"
       />
     </>

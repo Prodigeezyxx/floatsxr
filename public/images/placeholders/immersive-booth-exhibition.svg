@@ -1,0 +1,22 @@
+<svg viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#F5F0EB"/>
+  <rect x="100" y="120" width="600" height="280" rx="12" fill="#1A2E4A" opacity="0.03" stroke="#D4CFC8" stroke-width="1"/>
+  <rect x="130" y="140" width="160" height="240" rx="6" fill="#1A2E4A" opacity="0.05"/>
+  <rect x="320" y="140" width="160" height="240" rx="6" fill="#1A2E4A" opacity="0.05"/>
+  <rect x="510" y="140" width="160" height="240" rx="6" fill="#1A2E4A" opacity="0.05"/>
+  <rect x="130" y="350" width="160" height="30" rx="4" fill="#1A2E4A" opacity="0.08"/>
+  <rect x="320" y="350" width="160" height="30" rx="4" fill="#1A2E4A" opacity="0.08"/>
+  <rect x="510" y="350" width="160" height="30" rx="4" fill="#1A2E4A" opacity="0.08"/>
+  <rect x="200" y="200" width="20" height="10" rx="2" fill="#4CAF50" opacity="0.5"/>
+  <rect x="200" y="220" width="20" height="10" rx="2" fill="#4CAF50" opacity="0.5"/>
+  <rect x="200" y="240" width="20" height="10" rx="2" fill="#FFB300" opacity="0.5"/>
+  <rect x="390" y="200" width="20" height="30" rx="2" fill="#1A2E4A" opacity="0.1"/>
+  <rect x="390" y="240" width="20" height="30" rx="2" fill="#1A2E4A" opacity="0.08"/>
+  <rect x="390" y="280" width="20" height="30" rx="2" fill="#1A2E4A" opacity="0.06"/>
+  <rect x="580" y="200" width="20" height="40" rx="2" fill="#FF5252" opacity="0.4"/>
+  <rect x="580" y="250" width="20" height="40" rx="2" fill="#FF5252" opacity="0.3"/>
+  <rect x="580" y="300" width="20" height="20" rx="2" fill="#FF5252" opacity="0.2"/>
+  <text x="210" y="190" fill="#1A2E4A" font-size="8" opacity="0.3" font-family="system-ui" text-anchor="middle">Booth A</text>
+  <text x="400" y="190" fill="#1A2E4A" font-size="8" opacity="0.3" font-family="system-ui" text-anchor="middle">Booth B</text>
+  <text x="590" y="190" fill="#1A2E4A" font-size="8" opacity="0.3" font-family="system-ui" text-anchor="middle">Booth C</text>
+</svg>

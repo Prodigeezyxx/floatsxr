@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Get a Demo — Floats",
-  description: "See realmspace in action. Book a personalised walkthrough of the privacy-first intelligence layer for physical experiences.",
+  description: "See realmspace in action. Book a personalised walkthrough of the intelligence layer for physical experiences.",
 };
 
 export default function GetADemoPage() {

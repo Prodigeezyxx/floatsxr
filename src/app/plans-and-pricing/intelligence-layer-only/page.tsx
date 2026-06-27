@@ -15,7 +15,7 @@ export default function IntelligenceLayerOnlyPage() {
         <p className="body-lg text-inkwell/70 mt-6">
           The realmspace intelligence layer standalone. Includes spatial telemetry sensors,
           real-time dashboard, natural-language query, session replay, and engagement
-          analytics — with our privacy-first architecture.
+          analytics — with our architecture.
         </p>
         <div className="mt-8">
           <Link href="/plans-and-pricing" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 hover:underline">

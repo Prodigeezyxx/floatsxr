@@ -22,7 +22,7 @@ export default function IndustriesPage() {
     <>
       <HeroGradient
         headline="Industry-specific intelligence."
-        subhead="realmspace adapts to how your industry activates. Same privacy-first technology, tailored measurement."
+        subhead="realmspace adapts to how your industry activates. Same technology, tailored measurement."
         ctaLabel="Find your industry"
       />
       <section className="bg-white py-20 md:py-28">
@@ -46,7 +46,7 @@ export default function IndustriesPage() {
       <ConversionPanel
         headline="Don't see your industry? Let's talk."
         ctaLabel="Contact Sales"
-        imageSrc="/images/tech-abstract.jpg"
+        imageSrc="/images/placeholders/tech-abstract.svg"
         imageAlt="Industries"
       />
     </>

@@ -66,7 +66,7 @@ export default function SolutionsPage() {
       <ConversionPanel
         headline="Not sure which solution fits your activation?"
         ctaLabel="Talk to our team"
-        imageSrc="/images/spatial-tech-city.jpg"
+        imageSrc="/images/placeholders/spatial-tech-city.svg"
         imageAlt="Activation solutions"
       />
     </>

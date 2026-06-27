@@ -4,7 +4,7 @@ import { Shield } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Privacy — realmspace",
-  description: "realmspace is privacy-first by design. No facial recognition, no cross-session re-identification, no personal data collected.",
+  description: "realmspace is engineered to measure physical experiences without compromising visitor privacy. No facial recognition, no cross-session re-identification, no personal data collected.",
 };
 
 export default function PrivacyPage() {
@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <div className="grid-container max-w-[700px]">
         <Shield className="size-10 text-cobalt mb-6" />
         <p className="micro text-cobalt mb-4">realmspace commitment</p>
-        <h1 className="display-md text-inkwell">Privacy-first by design</h1>
+        <h1 className="display-md text-inkwell">Your data, your control</h1>
         <div className="mt-8 space-y-6 text-inkwell/70 body-lg leading-relaxed">
           <p>
             realmspace was built on a simple principle: you should be able to measure a physical

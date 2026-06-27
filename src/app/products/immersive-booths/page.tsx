@@ -29,7 +29,7 @@ export default function ImmersiveBoothsPage() {
           </div>
         </div>
       </section>
-      <ConversionPanel headline="Ready to build a booth that measures what matters?" ctaLabel="Talk to our team" imageSrc="/images/immersive-booth-exhibition.jpg" imageAlt="Floats immersive booth" />
+      <ConversionPanel headline="Ready to build a booth that measures what matters?" ctaLabel="Talk to our team" imageSrc="/images/placeholders/immersive-booth-exhibition.svg" imageAlt="Floats immersive booth" />
     </>
   );
 }

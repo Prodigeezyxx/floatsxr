@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Leadership — Floats",
-  description: "Meet the team behind Floats and realmspace, the privacy-first spatial intelligence layer for physical experiences.",
+  description: "Meet the team behind Floats and realmspace, the spatial intelligence layer for physical experiences.",
 };
 
 export default function LeadershipPage() {

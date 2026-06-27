@@ -39,7 +39,7 @@ export default function Home() {
           {
             icon: <Radar className="size-6" strokeWidth={1.5} />,
             title: "realmspace",
-            body: "Privacy-first spatial intelligence that captures engagement signals across every physical touchpoint. No cameras. No facial recognition. Real behavioural data.",
+            body: "spatial intelligence that captures engagement signals across every physical touchpoint. No cameras. No facial recognition. Real behavioural data.",
             linkLabel: "Explore realmspace",
             linkHref: "/products/realmspace",
           },
@@ -65,7 +65,7 @@ export default function Home() {
         <section className="gradient-haze py-20 md:py-28">
           <div className="grid-container text-center">
             <h2 className="display-md text-white max-w-[800px] mx-auto">
-              Privacy-first intelligence for physical experiences.
+              Intelligence for physical experiences.
             </h2>
             <p className="body-lg text-mist mt-5 max-w-[600px] mx-auto">
               No facial recognition. No cross-session re-identification.
@@ -246,7 +246,7 @@ export default function Home() {
         badges={[
           { name: "GDPR Compliant" },
           { name: "ISO 27001" },
-          { name: "Privacy-First by Design" },
+          { name: "Anonymised by Design" },
           { name: "SOC 2 Type II" },
           { name: "No Facial Recognition" },
           { name: "Session-Scoped Data" },
@@ -332,19 +332,19 @@ export default function Home() {
             category: "Guide",
             title: "The Measurable Activation Playbook: How to Plan, Measure, and Improve Every Brand Experience",
             href: "/resources/guides",
-            imageSrc: "/images/tech-abstract.jpg",
+            imageSrc: "/images/placeholders/tech-abstract.svg",
           },
           {
             category: "Customer Story",
             title: "How a Fortune 500 Auto Brand Measured ROI Across 12 Simultaneous Launch Events",
             href: "/resources/case-studies",
-            imageSrc: "/images/spatial-tech-city.jpg",
+            imageSrc: "/images/placeholders/spatial-tech-city.svg",
           },
           {
             category: "Research",
             title: "2026 Benchmark Report: Engagement Signals Across Retail, Trade Shows, and Brand Activations",
             href: "/resources/benchmarks",
-            imageSrc: "/images/studio-workspace.jpg",
+            imageSrc: "/images/placeholders/studio-workspace.svg",
           },
         ]}
       />
@@ -353,7 +353,7 @@ export default function Home() {
       <ConversionPanel
         headline="realmspace is the intelligence layer your activations need."
         ctaLabel="Get a Live Demo"
-        imageSrc="/images/tech-abstract.jpg"
+        imageSrc="/images/placeholders/tech-abstract.svg"
         imageAlt="Team reviewing realmspace data"
       />
     </>

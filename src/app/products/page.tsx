@@ -45,7 +45,7 @@ export default function ProductsPage() {
           {
             icon: <Radar className="size-6" strokeWidth={1.5} />,
             title: "realmspace",
-            body: "Privacy-first sensing AI that captures engagement signals across every touchpoint. Deployed inside every Floats booth and zone.",
+            body: "sensing AI that captures engagement signals across every touchpoint. Deployed inside every Floats booth and zone.",
             linkLabel: "Explore realmspace",
             linkHref: "/products/realmspace",
           },
@@ -68,7 +68,7 @@ export default function ProductsPage() {
       <ConversionPanel
         headline="Not sure where to start?"
         ctaLabel="Talk to our team"
-        imageSrc="/images/studio-workspace.jpg"
+        imageSrc="/images/placeholders/studio-workspace.svg"
         imageAlt="Floats team"
       />
     </>

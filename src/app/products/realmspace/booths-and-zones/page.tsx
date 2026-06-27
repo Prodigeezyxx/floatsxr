@@ -25,7 +25,7 @@ export default function BoothsAndZonesPage() {
           </div>
         </div>
       </section>
-      <ConversionPanel headline="Ready to instrument your activation?" ctaLabel="Get Started" imageSrc="/images/immersive-booth-exhibition.jpg" imageAlt="Booths and zones" />
+      <ConversionPanel headline="Ready to instrument your activation?" ctaLabel="Get Started" imageSrc="/images/placeholders/immersive-booth-exhibition.svg" imageAlt="Booths and zones" />
     </>
   );
 }

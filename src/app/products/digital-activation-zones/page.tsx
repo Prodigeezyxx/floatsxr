@@ -29,7 +29,7 @@ export default function DigitalActivationZonesPage() {
           </div>
         </div>
       </section>
-      <ConversionPanel headline="Ready to create a digital activation zone?" ctaLabel="Talk to our team" imageSrc="/images/spatial-tech-city.jpg" imageAlt="Digital activation zone" />
+      <ConversionPanel headline="Ready to create a digital activation zone?" ctaLabel="Talk to our team" imageSrc="/images/placeholders/spatial-tech-city.svg" imageAlt="Digital activation zone" />
     </>
   );
 }

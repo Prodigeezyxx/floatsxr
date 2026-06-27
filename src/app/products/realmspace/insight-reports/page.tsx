@@ -24,7 +24,7 @@ export default function InsightReportsPage() {
           </div>
         </div>
       </section>
-      <ConversionPanel headline="Ready to see your first insight report?" ctaLabel="Book a Walkthrough" imageSrc="/images/tech-abstract.jpg" imageAlt="Insight report" />
+      <ConversionPanel headline="Ready to see your first insight report?" ctaLabel="Book a Walkthrough" imageSrc="/images/placeholders/tech-abstract.svg" imageAlt="Insight report" />
     </>
   );
 }

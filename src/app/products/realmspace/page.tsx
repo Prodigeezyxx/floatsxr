@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "realmspace — See, Prove, and Improve Every Activation",
   description:
-    "realmspace captures what people actually do in a physical space. Privacy-first intelligence for brand activations, trade shows, and retail flagship experiences.",
+    "realmspace captures what people actually do in a physical space. intelligence for brand activations, trade shows, and retail flagship experiences.",
 };
 
 export default function RealmspacePage() {
@@ -37,10 +37,10 @@ export default function RealmspacePage() {
       <HeroSplit
         eyebrow="Floats realmspace"
         headline="See, prove, and improve every activation."
-        body="realmspace captures what people actually do in a physical space: where they go, what they engage with, how long they stay, and what drives action. Privacy-first, always."
+        body="realmspace captures what people actually do in a physical space: where they go, what they engage with, how long they stay, and what drives action. always."
         primaryCta={{ label: "Book a Walkthrough", href: "/get-a-demo" }}
         secondaryCta={{ label: "See how it works", href: "/get-a-demo" }}
-        imageSrc="/images/hero-vr-professional.jpg"
+        imageSrc="/images/placeholders/hero-vr-professional.svg"
         imageAlt="realmspace activation dashboard"
         floatingCard={
           <ProductCard
@@ -55,7 +55,7 @@ export default function RealmspacePage() {
           <div className="bg-white border border-mist/30 rounded-lg p-8 md:p-12 max-w-[900px] mx-auto">
             <h2 className="heading-2 text-inkwell mb-4">What is realmspace?</h2>
             <p className="body-lg text-inkwell/70 leading-relaxed">
-              realmspace is a privacy-first intelligence layer for physical experiences. It uses
+              realmspace is a intelligence layer for physical experiences. It uses
               spatial telemetry — not cameras, not facial recognition — to capture engagement
               signals across booths, zones, kiosks, and branded touchpoints. The output is a
               clear, plain-English read on what happened, what worked, and what to do next.
@@ -89,9 +89,9 @@ export default function RealmspacePage() {
         <div className="grid-container">
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { src: "/images/immersive-booth-exhibition.jpg", label: "Zone mapping" },
-              { src: "/images/spatial-tech-city.jpg", label: "Heat maps & traffic" },
-              { src: "/images/3d-ai-workspace.jpg", label: "Insight reports" },
+              { src: "/images/placeholders/immersive-booth-exhibition.svg", label: "Zone mapping" },
+              { src: "/images/placeholders/spatial-tech-city.svg", label: "Heat maps & traffic" },
+              { src: "/images/placeholders/3d-ai-workspace.svg", label: "Insight reports" },
             ].map((item, i) => (
               <div key={i} className="bg-ecru rounded-lg overflow-hidden">
                 <img
@@ -144,21 +144,21 @@ export default function RealmspacePage() {
               icon: <Eye className="size-6" strokeWidth={1.5} />,
               title: "Know exactly what happened",
               body: "Not footfall estimates. Not anecdotal feedback. Real behavioural data mapped to every touchpoint in your activation. See which zones drew the most engagement, how long people stayed, and what drove action.",
-              image: "/images/tech-abstract.jpg",
+              image: "/images/placeholders/tech-abstract.svg",
               reversed: false,
             },
             {
               icon: <MessageSquare className="size-6" strokeWidth={1.5} />,
               title: "Ask your data in plain English",
               body: "No dashboard training required. Type natural-language questions like 'How many people visited the demo zone between 2-4pm?' or 'Which content drove the highest completion rate?' and get instant answers.",
-              image: "/images/ar-vr-split.jpg",
+              image: "/images/placeholders/ar-vr-split.svg",
               reversed: true,
             },
             {
               icon: <BarChart3 className="size-6" strokeWidth={1.5} />,
               title: "Turn insights into action",
               body: "Every activation generates a clear read on what to do differently next time. Structured recommendations, benchmark comparisons, and ready-to-share reports that make your next activation smarter.",
-              image: "/images/hero-xr.jpg",
+              image: "/images/placeholders/hero-xr.svg",
               reversed: false,
             },
           ].map((feature, i) => (
@@ -207,7 +207,7 @@ export default function RealmspacePage() {
         <div className="grid-container text-center">
           <Shield className="size-10 text-mist mx-auto mb-6" />
           <h2 className="display-sm text-white max-w-[700px] mx-auto">
-            Privacy-first by design
+            No identities. No compromise.
           </h2>
           <p className="body-lg text-mist mt-5 max-w-[600px] mx-auto">
             No facial recognition. No cross-session re-identification. No personal data collected.
@@ -227,7 +227,7 @@ export default function RealmspacePage() {
       <ConversionPanel
         headline="Ready to see what your activation actually did?"
         ctaLabel="Book a Walkthrough"
-        imageSrc="/images/studio-workspace.jpg"
+        imageSrc="/images/placeholders/studio-workspace.svg"
         imageAlt="Team reviewing realmspace data"
       />
     </>

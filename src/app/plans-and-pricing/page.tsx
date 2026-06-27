@@ -33,7 +33,7 @@ const plans = [
       "Natural-language query",
       "Session replay",
       "Engagement analytics",
-      "Privacy-first architecture",
+      "architecture",
     ],
   },
   {
@@ -117,7 +117,7 @@ export default function PricingPage() {
       <ConversionPanel
         headline="Still not sure? Let's find the right plan together."
         ctaLabel="Contact Sales"
-        imageSrc="/images/tech-abstract.jpg"
+        imageSrc="/images/placeholders/tech-abstract.svg"
         imageAlt="Floats team"
       />
     </>

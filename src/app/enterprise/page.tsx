@@ -46,7 +46,7 @@ export default function EnterprisePage() {
       <ConversionPanel
         headline="Ready to scale your activation programme?"
         ctaLabel="Talk to Enterprise Sales"
-        imageSrc="/images/spatial-tech-city.jpg"
+        imageSrc="/images/placeholders/spatial-tech-city.svg"
         imageAlt="Enterprise deployment"
       />
     </>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Government & Cultural — Floats",
-  description: "Museums, public installations, and civic experiences measured privacy-first with realmspace.",
+  description: "Museums, public installations, and civic experiences measured with realmspace.",
 };
 
 export default function GovernmentAndCulturalPage() {
@@ -14,7 +14,7 @@ export default function GovernmentAndCulturalPage() {
         <h1 className="heading-1 text-inkwell">Government &amp; Cultural</h1>
         <p className="body-lg text-inkwell/70 mt-6">
           Museums, public installations, and civic experiences. realmspace measures
-          how visitors engage with cultural spaces — privacy-first, always. Understand
+          how visitors engage with cultural spaces — always. Understand
           traffic patterns, popular exhibits, and dwell times without compromise.
         </p>
         <div className="mt-8">

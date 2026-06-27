@@ -24,7 +24,7 @@ export default function ResourcesPage() {
     <>
       <HeroGradient
         headline="Resources to help you measure better."
-        subhead="Case studies, guides, benchmarks, and research from the team building privacy-first spatial intelligence."
+        subhead="Case studies, guides, benchmarks, and research from the team building spatial intelligence."
         ctaLabel="Explore resources"
       />
       <section className="bg-white py-20 md:py-28">
@@ -48,7 +48,7 @@ export default function ResourcesPage() {
       <ConversionPanel
         headline="Want the latest resources delivered to your inbox?"
         ctaLabel="Subscribe"
-        imageSrc="/images/studio-workspace.jpg"
+        imageSrc="/images/placeholders/studio-workspace.svg"
         imageAlt="Resources"
       />
     </>
