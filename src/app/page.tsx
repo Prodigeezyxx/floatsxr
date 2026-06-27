@@ -221,7 +221,7 @@ export default function Home() {
                 <img
                   src={item.src}
                   alt={item.label}
-                  className="w-full object-cover"
+                  className="w-full object-cover aspect-video"
                 />
                 <div className="p-5">
                   <p className="text-sm font-medium text-inkwell">{item.label}</p>

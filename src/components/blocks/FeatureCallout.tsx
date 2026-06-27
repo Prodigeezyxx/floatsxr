@@ -30,13 +30,13 @@ export function FeatureCallout({
             <div className="flex flex-wrap gap-3 mt-8">
               <Link
                 href={primaryCta.href}
-                className="inline-flex items-center px-5 py-2.5 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors"
+                className="inline-flex items-center px-5 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors min-h-[44px]"
               >
                 {primaryCta.label}
               </Link>
               <Link
                 href={secondaryCta.href}
-                className="inline-flex items-center px-5 py-2.5 rounded-lg border border-cobalt text-cobalt text-sm font-medium hover:bg-cobalt/5 transition-colors"
+                className="inline-flex items-center px-5 py-3 rounded-lg border border-cobalt text-cobalt text-sm font-medium hover:bg-cobalt/5 transition-colors min-h-[44px]"
               >
                 {secondaryCta.label}
               </Link>

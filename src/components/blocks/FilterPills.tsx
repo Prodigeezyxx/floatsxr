@@ -27,7 +27,7 @@ export function FilterPills({ eyebrow = "View use cases", pills }: FilterPillsPr
               key={pill.label}
               onClick={() => setActive(i)}
               className={cn(
-                "relative px-5 py-2 rounded-full text-sm font-medium transition-colors",
+                "relative px-5 py-2.5 rounded-full text-sm font-medium transition-colors min-h-[44px] flex items-center",
                 i === active
                   ? "text-white"
                   : "bg-mist text-inkwell hover:bg-mist/70"

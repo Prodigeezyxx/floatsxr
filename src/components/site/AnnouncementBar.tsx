@@ -51,7 +51,7 @@ export function AnnouncementBar({
           </a>
           <button
             onClick={handleDismiss}
-            className="text-white/70 hover:text-white transition-colors"
+            className="text-white/70 hover:text-white transition-colors p-2"
             aria-label="Dismiss announcement"
           >
             <X className="size-4" />

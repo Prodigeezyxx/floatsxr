@@ -41,7 +41,7 @@ export function IntegrationSection() {
               Explore Integrations
             </Link>
           </div>
-          <div className="mt-14 grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
+          <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
             {integrations.map((tool) => (
               <div
                 key={tool.name}

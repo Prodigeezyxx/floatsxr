@@ -213,7 +213,7 @@ export function PrimaryNav() {
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden"
+          className="lg:hidden p-3 -mr-3"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -228,7 +228,7 @@ export function PrimaryNav() {
             <div key={link.label}>
               <Link
                 href={link.href}
-                className="block py-2 text-sm font-medium text-inkwell/80"
+                className="block py-3 text-sm font-medium text-inkwell/80"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}

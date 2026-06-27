@@ -23,7 +23,7 @@ export function StatCard({
     <FadeIn delay={delay}>
       <div
         className={cn(
-          "rounded-[24px] p-8",
+          "rounded-[24px] p-6 md:p-8",
           variant === "ecru" ? "bg-ecru" : "bg-mist",
           className
         )}
