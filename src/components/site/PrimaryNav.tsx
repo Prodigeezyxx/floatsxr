@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -138,11 +138,26 @@ const navLinks = [
 export function PrimaryNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMega, setOpenMega] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-mist/50">
+    <header
+      className={cn(
+        "sticky top-0 z-50 border-b transition-all duration-300",
+        scrolled
+          ? "bg-white/85 backdrop-blur-xl border-mist/40 shadow-card"
+          : "bg-white border-mist/30"
+      )}
+    >
       <div className="grid-container flex items-center justify-between h-[72px]">
-        <Link href="/" className="text-inkwell font-semibold text-xl tracking-tight">
+        <Link href="/" className="text-inkwell font-semibold text-xl tracking-tight hover:opacity-80 transition-opacity">
           Floats
         </Link>
 
@@ -165,7 +180,7 @@ export function PrimaryNav() {
                 {link.children && <ChevronDown className="size-3.5" />}
               </Link>
               {link.children && openMega === link.label && (
-                <div className="absolute top-full left-0 w-[720px] bg-white border border-mist/50 rounded-lg shadow-card p-6 grid grid-cols-3 gap-8">
+                <div className="absolute top-full left-0 w-[720px] bg-white/95 backdrop-blur-xl border border-mist/40 rounded-xl shadow-elevated p-6 grid grid-cols-3 gap-8">
                   {link.children.map((col) => (
                     <div key={col.column}>
                       <p className="micro text-cobalt mb-3">{col.column}</p>
@@ -193,19 +208,19 @@ export function PrimaryNav() {
         <div className="hidden lg:flex items-center gap-4">
           <Link
             href="/contact-sales"
-            className="text-sm font-medium text-inkwell/70 hover:text-inkwell transition-colors"
+            className="text-sm font-medium text-inkwell/60 hover:text-inkwell transition-colors"
           >
-            CONTACT SALES
+            Contact sales
           </Link>
           <Link
             href="/get-a-demo"
-            className="inline-flex items-center px-5 py-2 rounded-lg border border-cobalt text-cobalt text-sm font-medium hover:bg-cobalt/5 transition-colors"
+            className="inline-flex items-center px-5 py-2 rounded-lg border border-cobalt/30 text-cobalt text-sm font-medium hover:bg-cobalt/5 hover:border-cobalt/50 transition-all"
           >
-            BOOK A DEMO
+            Book a demo
           </Link>
           <Link
             href="/try-realmspace"
-            className="inline-flex items-center px-5 py-2 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors"
+            className="inline-flex items-center px-5 py-2 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 hover:shadow-glow transition-all"
           >
             Try realmspace
           </Link>

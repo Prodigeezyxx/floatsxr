@@ -2,7 +2,6 @@ import Link from "next/link";
 import { HeroGradient } from "@/components/blocks/HeroGradient";
 import { ThreeColumnFeatures } from "@/components/blocks/ThreeColumnFeatures";
 import { ConversionPanel } from "@/components/blocks/ConversionPanel";
-import { Building2, Monitor, Radar } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,21 +28,18 @@ export default function ProductsPage() {
       <ThreeColumnFeatures
         features={[
           {
-            icon: <Building2 className="size-6" strokeWidth={1.5} />,
             title: "Immersive Booths",
             body: "Custom-designed booths for brand activations, trade shows, and flagship retail. Built to captivate. Pre-instrumented with realmspace.",
             linkLabel: "Learn more",
             linkHref: "/products/immersive-booths",
           },
           {
-            icon: <Monitor className="size-6" strokeWidth={1.5} />,
             title: "Digital Activation Zones",
             body: "Kiosks, interactive surfaces, branded digital touchpoints, and immersive projections. Every zone is a measurable engagement surface.",
             linkLabel: "Learn more",
             linkHref: "/products/digital-activation-zones",
           },
           {
-            icon: <Radar className="size-6" strokeWidth={1.5} />,
             title: "realmspace",
             body: "sensing AI that captures engagement signals across every touchpoint. Deployed inside every Floats booth and zone.",
             linkLabel: "Explore realmspace",

@@ -20,27 +20,32 @@ export function FilterPills({ eyebrow = "View use cases", pills }: FilterPillsPr
   return (
     <section className="bg-ecru py-20 md:py-28">
       <div className="grid-container">
-        <p className="text-center caption text-inkwell/60 mb-6">{eyebrow}</p>
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <p className="text-center caption text-inkwell/60 mb-8">{eyebrow}</p>
+        <div
+          className="flex flex-wrap justify-center gap-x-1 gap-y-2 mb-12 border-b border-mist/40 max-w-[900px] mx-auto"
+          role="tablist"
+        >
           {pills.map((pill, i) => (
             <button
               key={pill.label}
+              role="tab"
+              aria-selected={i === active}
               onClick={() => setActive(i)}
               className={cn(
-                "relative px-5 py-2.5 rounded-full text-sm font-medium transition-colors min-h-[44px] flex items-center",
+                "relative px-4 md:px-5 py-3 text-sm font-medium transition-colors min-h-[44px]",
                 i === active
-                  ? "text-white"
-                  : "bg-mist text-inkwell hover:bg-mist/70"
+                  ? "text-inkwell"
+                  : "text-inkwell/45 hover:text-inkwell/70"
               )}
             >
+              {pill.label}
               {i === active && (
                 <motion.span
-                  layoutId="activePill"
-                  className="absolute inset-0 bg-cobalt rounded-full"
+                  layoutId="activeTab"
+                  className="absolute bottom-0 left-4 right-4 h-0.5 bg-cobalt"
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
               )}
-              <span className="relative z-10">{pill.label}</span>
             </button>
           ))}
         </div>

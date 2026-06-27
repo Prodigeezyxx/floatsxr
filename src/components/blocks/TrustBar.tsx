@@ -31,24 +31,18 @@ export function TrustBar({ stats, badges }: TrustBarProps) {
           </div>
         </FadeIn>
         <FadeIn delay={0.15}>
-          <div className="border-t border-mist/30 pt-8">
-            <p className="text-center caption text-inkwell/50 mb-6">
+          <div className="border-t border-mist/30 pt-8 text-center">
+            <p className="caption text-inkwell/50 mb-4">
               Compliance and certifications
             </p>
-            <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
-              {badges.map((badge) => (
-                <div
-                  key={badge.name}
-                  className="flex items-center gap-2 text-sm text-inkwell/60"
-                >
-                  <svg className="size-4 text-cobalt shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                    <polyline points="22 4 12 14.01 9 11.01" />
-                  </svg>
+            <p className="text-sm text-inkwell/60 leading-relaxed max-w-[720px] mx-auto">
+              {badges.map((badge, i) => (
+                <span key={badge.name}>
+                  {i > 0 && <span className="text-mist mx-2 md:mx-3">·</span>}
                   {badge.name}
-                </div>
+                </span>
               ))}
-            </div>
+            </p>
           </div>
         </FadeIn>
       </div>

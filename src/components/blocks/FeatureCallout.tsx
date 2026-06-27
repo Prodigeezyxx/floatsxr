@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FadeIn } from "./FadeIn";
+import { ScreenshotFrame } from "./ScreenshotFrame";
 
 interface FeatureCalloutProps {
   headline: string;
@@ -43,11 +44,12 @@ export function FeatureCallout({
             </div>
           </FadeIn>
           <FadeIn direction="right" delay={0.15}>
-            <div className="bg-ecru rounded-lg p-4">
-              <img
+            <div className="relative">
+              <div className="absolute -inset-3 bg-cobalt/5 rounded-2xl blur-xl pointer-events-none" />
+              <ScreenshotFrame
                 src={imageSrc}
                 alt={imageAlt}
-                className="w-full h-auto rounded-md object-cover shadow-card"
+                className="relative"
               />
             </div>
           </FadeIn>
