@@ -5,8 +5,8 @@ const footerColumns = [
     title: "Products",
     links: [
       { label: "realmspace", href: "/products/realmspace" },
-      { label: "Experience Layer", href: "/products/experience-layer" },
-      { label: "Action & Reporting", href: "/products/action-reporting" },
+      { label: "Immersive Booths", href: "/products/immersive-booths" },
+      { label: "Digital Activation Zones", href: "/products/digital-activation-zones" },
       { label: "Integrations", href: "/products/integrations" },
       { label: "API", href: "/products/realmspace/api" },
     ],

@@ -2,65 +2,71 @@ import Link from "next/link";
 import { HeroGradient } from "@/components/blocks/HeroGradient";
 import { ThreeColumnFeatures } from "@/components/blocks/ThreeColumnFeatures";
 import { ConversionPanel } from "@/components/blocks/ConversionPanel";
-import { Layers, Radar, FileBarChart } from "lucide-react";
+import { Building2, Monitor, Radar } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Products — Floats",
-  description: "Three integrated layers for measurable physical experiences: Experience Layer, realmspace intelligence, and Action & Reporting.",
+  description: "Floats builds immersive booths, digital activation zones, and realmspace — the sensing AI that measures every physical experience.",
 };
 
 export default function ProductsPage() {
   return (
     <>
       <HeroGradient
-        headline="Three layers. One unified view of your activation."
-        subhead="From the physical build to the insight report — everything you need to see, prove, and improve every experience."
+        headline="Booths, zones, and the AI that measures them."
+        subhead="Floats builds the physical experience. realmspace captures what happens inside it."
         ctaLabel="Explore realmspace"
       />
+      <section className="bg-white py-16 md:py-20">
+        <div className="grid-container">
+          <p className="micro text-cobalt mb-2 text-center">Everything we build</p>
+          <h2 className="heading-1 text-inkwell text-center max-w-[600px] mx-auto">
+            Floats builds the experience. realmspace measures it.
+          </h2>
+        </div>
+      </section>
       <ThreeColumnFeatures
         features={[
           {
-            icon: <Layers className="size-6" strokeWidth={1.5} />,
-            title: "Experience Layer",
-            body: "The physical activation itself — booths, kiosks, digital surfaces, immersive zones, branded touchpoints. Designed, built, and deployed by Floats.",
+            icon: <Building2 className="size-6" strokeWidth={1.5} />,
+            title: "Immersive Booths",
+            body: "Custom-designed booths for brand activations, trade shows, and flagship retail. Built to captivate. Pre-instrumented with realmspace.",
             linkLabel: "Learn more",
-            linkHref: "/products/experience-layer",
+            linkHref: "/products/immersive-booths",
+          },
+          {
+            icon: <Monitor className="size-6" strokeWidth={1.5} />,
+            title: "Digital Activation Zones",
+            body: "Kiosks, interactive surfaces, branded digital touchpoints, and immersive projections. Every zone is a measurable engagement surface.",
+            linkLabel: "Learn more",
+            linkHref: "/products/digital-activation-zones",
           },
           {
             icon: <Radar className="size-6" strokeWidth={1.5} />,
-            title: "Measurement & Insight Layer",
-            body: "realmspace sensors, telemetry, dashboard, session replay, and plain-English query surface. Captures what people actually do in a physical space.",
+            title: "realmspace",
+            body: "Privacy-first sensing AI that captures engagement signals across every touchpoint. Deployed inside every Floats booth and zone.",
             linkLabel: "Explore realmspace",
             linkHref: "/products/realmspace",
-          },
-          {
-            icon: <FileBarChart className="size-6" strokeWidth={1.5} />,
-            title: "Action & Reporting Layer",
-            body: "Post-activation reports, benchmark data, CRM integration, and structured recommendations. Every activation makes the next one smarter.",
-            linkLabel: "Learn more",
-            linkHref: "/products/action-reporting",
           },
         ]}
       />
       <section className="bg-ecru py-20 md:py-28">
         <div className="grid-container text-center">
           <h2 className="heading-1 text-inkwell max-w-[700px] mx-auto">
-            Built to work together. Priced to buy separately.
+            Built together. Priced to fit.
           </h2>
           <p className="body-lg text-inkwell/60 mt-4 max-w-[600px] mx-auto">
-            Each layer is available on its own or as a bundled activation package. Only pay for what you need.
+            Get the booth, the zones, and the AI — or just the pieces you need. Every product works with every other product.
           </p>
-          <Link
-            href="/plans-and-pricing"
-            className="inline-flex items-center px-6 py-2.5 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors mt-8"
-          >
-            View Plans & Pricing
-          </Link>
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
+            <Link href="/plans-and-pricing" className="inline-flex items-center px-6 py-2.5 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors">View Plans & Pricing</Link>
+            <Link href="/contact-sales" className="inline-flex items-center px-6 py-2.5 rounded-lg border border-cobalt text-cobalt text-sm font-medium hover:bg-cobalt/5 transition-colors">Contact Sales</Link>
+          </div>
         </div>
       </section>
       <ConversionPanel
-        headline="Not sure which layer fits your activation?"
+        headline="Not sure where to start?"
         ctaLabel="Talk to our team"
         imageSrc="/images/studio-workspace.jpg"
         imageAlt="Floats team"

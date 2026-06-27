@@ -11,18 +11,18 @@ const navLinks = [
     href: "/products",
     children: [
       {
-        column: "Platform",
+        column: "What we build",
         links: [
           { label: "All products", href: "/products" },
-          { label: "realmspace", href: "/products/realmspace" },
-          { label: "Experience Layer", href: "/products/experience-layer" },
-          { label: "Action & Reporting", href: "/products/action-reporting" },
+          { label: "Immersive Booths", href: "/products/immersive-booths" },
+          { label: "Digital Activation Zones", href: "/products/digital-activation-zones" },
           { label: "Integrations", href: "/products/integrations" },
         ],
       },
       {
-        column: "realmspace features",
+        column: "The intelligence layer",
         links: [
+          { label: "realmspace", href: "/products/realmspace" },
           { label: "Booths & Zones", href: "/products/realmspace/booths-and-zones" },
           { label: "Insight Reports", href: "/products/realmspace/insight-reports" },
           { label: "Natural-Language Query", href: "/products/realmspace/natural-language-query" },
