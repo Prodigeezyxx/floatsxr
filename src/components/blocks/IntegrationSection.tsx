@@ -5,9 +5,9 @@ import { FadeIn } from "./FadeIn";
 
 const integrations = [
   { name: "Salesforce", src: "/images/Salesforce-logo.webp" },
-  { name: "HubSpot", src: null },
-  { name: "Apollo", src: null },
-  { name: "Power BI", src: null },
+  { name: "HubSpot", src: "/images/logomarks/hubspot.svg" },
+  { name: "Apollo", src: "/images/logomarks/apollo.svg" },
+  { name: "Power BI", src: "/images/logomarks/powerbi.svg" },
   { name: "Google Analytics", src: "/images/Google_analytics-1024x576.png" },
   { name: "Slack", src: "/images/Slack-logo.png" },
 ];
