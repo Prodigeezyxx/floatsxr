@@ -3,6 +3,24 @@
 import Link from "next/link";
 import { FadeIn } from "./FadeIn";
 
+const integrations = [
+  { name: "Salesforce", src: "/images/Salesforce-logo.webp" },
+  { name: "HubSpot", src: null },
+  { name: "Apollo", src: null },
+  { name: "Power BI", src: null },
+  { name: "Google Analytics", src: "/images/Google_analytics-1024x576.png" },
+  { name: "Slack", src: "/images/Slack-logo.png" },
+];
+
+const fallbackLogo = (name: string) => (
+  <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none">
+    <rect x="8" y="8" width="32" height="32" rx="6" stroke="currentColor" strokeWidth="1.5" opacity="0.4" />
+    <text x="24" y="30" textAnchor="middle" fill="currentColor" fontSize="16" fontWeight="600" opacity="0.4">
+      {name.charAt(0)}
+    </text>
+  </svg>
+);
+
 export function IntegrationSection() {
   return (
     <section className="bg-ecru py-20 md:py-28">
@@ -23,17 +41,26 @@ export function IntegrationSection() {
               Explore Integrations
             </Link>
           </div>
-          <div className="mt-12 grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center">
-            {["Salesforce", "HubSpot", "Tableau", "Power BI", "Google Analytics", "Slack"].map(
-              (tool) => (
-                <div
-                  key={tool}
-                  className="text-inkwell/25 font-medium text-sm tracking-wider"
-                >
-                  {tool}
-                </div>
-              )
-            )}
+          <div className="mt-14 grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
+            {integrations.map((tool) => (
+              <div
+                key={tool.name}
+                className="flex flex-col items-center gap-2 text-inkwell/40 group"
+              >
+                {tool.src ? (
+                  <img
+                    src={tool.src}
+                    alt={tool.name}
+                    className="h-8 w-auto opacity-40 group-hover:opacity-70 transition-opacity"
+                  />
+                ) : (
+                  <div className="group-hover:text-inkwell/70 transition-colors">
+                    {fallbackLogo(tool.name)}
+                  </div>
+                )}
+                <span className="text-[11px] font-medium tracking-wider">{tool.name}</span>
+              </div>
+            ))}
           </div>
         </FadeIn>
       </div>

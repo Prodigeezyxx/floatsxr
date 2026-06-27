@@ -196,54 +196,41 @@ export default function Home() {
         body="Save time and unlock value from your activation data. With realmspace, you can automate insight reports, query your data in plain English, and connect engagement signals across every activation in your programme."
         primaryCta={{ label: "View plans and pricing", href: "/plans-and-pricing" }}
         secondaryCta={{ label: "Explore all products", href: "/products" }}
-        imageSrc="/images/hero-xr.jpg"
+        imageSrc="/images/Add_realmspace_branding_in_lowercase_to_the_oran-1782596029996.png"
         imageAlt="realmspace dashboard"
       />
 
-      {/* SECTION 5: Product screenshot zone with floating cards */}
-      <FadeIn>
-        <section className="bg-mist/30 py-20 md:py-28">
-          <div className="grid-container">
-            <h2 className="heading-1 text-inkwell text-center mb-4">
+      {/* SECTION 5: See realmspace in action — dashboards */}
+      <section className="bg-mist/30 py-20 md:py-28">
+        <div className="grid-container">
+          <FadeIn className="text-center mb-14">
+            <h2 className="heading-1 text-inkwell">
               See realmspace in action
             </h2>
-            <p className="body-lg text-inkwell/60 text-center max-w-[600px] mx-auto mb-12">
+            <p className="body-lg text-inkwell/60 mt-3 max-w-[600px] mx-auto">
               Real dashboards, real data, real activations.
             </p>
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-              <div className="relative">
-                <div className="bg-white rounded-md shadow-card p-4 md:p-6">
-                  <img
-                    src="/images/hero-xr.jpg"
-                    alt="realmspace dashboard"
-                    className="w-full h-auto rounded-md object-cover aspect-video"
-                  />
-                </div>
-                <ProductCard
-                  lines={["Zone 3 · 247 engagements · avg dwell 1m 42s"]}
-                  className="absolute -bottom-3 -right-3"
+          </FadeIn>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { src: "/images/Automation_dashboard_with_consistent_realmspace_br-1782596152361.png", label: "Automation dashboard" },
+              { src: "/images/Benchmark_intelligence_dashboard_matching_realmspa-1782596159088.png", label: "Benchmark intelligence" },
+              { src: "/images/Zone_comparison_dashboard_with_realmspace_design_c-1782596167806.png", label: "Zone comparison" },
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-lg shadow-card overflow-hidden">
+                <img
+                  src={item.src}
+                  alt={item.label}
+                  className="w-full object-cover"
                 />
-              </div>
-              <div className="relative mt-8 md:mt-16">
-                <div className="bg-white rounded-md shadow-card p-4 md:p-6">
-                  <img
-                    src="/images/immersive-booth-exhibition.jpg"
-                    alt="Activation analytics"
-                    className="w-full h-auto rounded-md object-cover aspect-video"
-                  />
+                <div className="p-5">
+                  <p className="text-sm font-medium text-inkwell">{item.label}</p>
                 </div>
-                <ProductCard
-                  lines={[
-                    "Insight: visitors who touched the demo unit",
-                    "were 3.2× more likely to scan the QR",
-                  ]}
-                  className="absolute -bottom-3 -left-3"
-                />
               </div>
-            </div>
+            ))}
           </div>
-        </section>
-      </FadeIn>
+        </div>
+      </section>
 
       {/* SECTION 6: Integration section */}
       <IntegrationSection />
