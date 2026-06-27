@@ -1,0 +1,44 @@
+"use client";
+
+import Link from "next/link";
+import { StaggerContainer, StaggerItem } from "./FadeIn";
+
+interface BlogPost {
+  category: string;
+  title: string;
+  href: string;
+  imageSrc: string;
+}
+
+interface BlogCardsProps {
+  posts: BlogPost[];
+}
+
+export function BlogCards({ posts }: BlogCardsProps) {
+  return (
+    <section className="bg-white py-20 md:py-28">
+      <div className="grid-container">
+        <p className="micro text-cobalt mb-8 text-center">Recommended for you</p>
+        <StaggerContainer className="grid md:grid-cols-3 gap-6">
+          {posts.map((post) => (
+            <StaggerItem key={post.title}>
+              <Link href={post.href} className="group block">
+                <div className="bg-ecru rounded-lg overflow-hidden mb-4">
+                  <img
+                    src={post.imageSrc}
+                    alt={post.title}
+                    className="w-full aspect-[16/9] object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                  />
+                </div>
+                <p className="micro text-cobalt mb-2">{post.category}</p>
+                <h3 className="text-sm font-medium text-inkwell group-hover:text-cobalt transition-colors leading-snug">
+                  {post.title}
+                </h3>
+              </Link>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+      </div>
+    </section>
+  );
+}
