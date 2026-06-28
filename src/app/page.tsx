@@ -66,10 +66,13 @@ export default function Home() {
             label: "Brand Activations",
             content: (
               <>
-                <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <h3 className="heading-3 text-inkwell mb-2">Brand Activations</h3>
-                  <p className="caption text-inkwell/70">Measure dwell time, engagement depth, and content performance across every touchpoint. Know which moments drove the most meaningful interaction.</p>
-                  <Link href="/solutions/brand-activations" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
+                  <img src="/images/Add_realmspace_branding_in_lowercase_to_the_gree-1782596070128.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <div className="p-6 md:p-7">
+                    <h3 className="heading-3 text-inkwell mb-2">Brand Activations</h3>
+                    <p className="caption text-inkwell/70">Measure dwell time, engagement depth, and content performance across every touchpoint. Know which moments drove the most meaningful interaction.</p>
+                    <Link href="/solutions/brand-activations" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                  </div>
                 </div>
                 <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
                   <StatCard variant="mist">
@@ -83,10 +86,13 @@ export default function Home() {
             label: "Trade Shows",
             content: (
               <>
-                <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <h3 className="heading-3 text-inkwell mb-2">Trade Shows & Conferences</h3>
-                  <p className="caption text-inkwell/70">Multi-booth measurement across an entire show floor. Understand traffic patterns, peak hours, and which exhibits drove the most engagement.</p>
-                  <Link href="/solutions/trade-shows-and-conferences" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
+                  <img src="/images/Realistic_photograph_of_a_bright_orange_and_white_-1782596045852.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <div className="p-6 md:p-7">
+                    <h3 className="heading-3 text-inkwell mb-2">Trade Shows & Conferences</h3>
+                    <p className="caption text-inkwell/70">Multi-booth measurement across an entire show floor. Understand traffic patterns, peak hours, and which exhibits drove the most engagement.</p>
+                    <Link href="/solutions/trade-shows-and-conferences" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                  </div>
                 </div>
                 <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
                   <StatCard variant="mist">
@@ -100,10 +106,13 @@ export default function Home() {
             label: "Retail Flagship",
             content: (
               <>
-                <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <h3 className="heading-3 text-inkwell mb-2">Retail Flagship</h3>
-                  <p className="caption text-inkwell/70">Permanent installation measurement for flagship stores. Understand how visitors move through your space, which displays convert, and what drives repeat visits.</p>
-                  <Link href="/solutions/retail-flagship" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
+                  <img src="/images/Realistic_photograph_of_an_emerald_green_interacti-1782596058924.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <div className="p-6 md:p-7">
+                    <h3 className="heading-3 text-inkwell mb-2">Retail Flagship</h3>
+                    <p className="caption text-inkwell/70">Permanent installation measurement for flagship stores. Understand how visitors move through your space, which displays convert, and what drives repeat visits.</p>
+                    <Link href="/solutions/retail-flagship" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                  </div>
                 </div>
                 <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
                   <StatCard variant="mist">
@@ -117,10 +126,13 @@ export default function Home() {
             label: "Sponsorship",
             content: (
               <>
-                <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <h3 className="heading-3 text-inkwell mb-2">Sponsor Measurement</h3>
-                  <p className="caption text-inkwell/70">Give your sponsors a reason to come back. Show them exactly how many people engaged with their activation, for how long, and what action they took.</p>
-                  <Link href="/solutions/sponsor-measurement" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
+                  <img src="/images/Add_realmspace_branding_in_lowercase_to_the_oran-1782596029996.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <div className="p-6 md:p-7">
+                    <h3 className="heading-3 text-inkwell mb-2">Sponsor Measurement</h3>
+                    <p className="caption text-inkwell/70">Give your sponsors a reason to come back. Show them exactly how many people engaged with their activation, for how long, and what action they took.</p>
+                    <Link href="/solutions/sponsor-measurement" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                  </div>
                 </div>
                 <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
                   <StatCard variant="mist">
@@ -134,10 +146,13 @@ export default function Home() {
             label: "Venue Ops",
             content: (
               <>
-                <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <h3 className="heading-3 text-inkwell mb-2">Venue Operations</h3>
-                  <p className="caption text-inkwell/70">Ongoing telemetry for venue operators. Understand traffic flow, bottleneck zones, and how to optimise your space for both visitors and exhibitors.</p>
-                  <Link href="/solutions/venue-operations" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
+                  <img src="/images/Realistic_photograph_of_a_dark_charcoal_grey_angul-1782596012937.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <div className="p-6 md:p-7">
+                    <h3 className="heading-3 text-inkwell mb-2">Venue Operations</h3>
+                    <p className="caption text-inkwell/70">Ongoing telemetry for venue operators. Understand traffic flow, bottleneck zones, and how to optimise your space for both visitors and exhibitors.</p>
+                    <Link href="/solutions/venue-operations" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                  </div>
                 </div>
                 <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
                   <StatCard variant="mist">
@@ -151,10 +166,13 @@ export default function Home() {
             label: "Measurable ROI",
             content: (
               <>
-                <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <h3 className="heading-3 text-inkwell mb-2">Measurable ROI</h3>
-                  <p className="caption text-inkwell/70">For the C-suite who needs defensible spend. Connect spatial behaviour to business outcomes with clear, auditable data. No anecdotes. No estimates.</p>
-                  <Link href="/solutions/measurable-roi" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
+                  <img src="/images/realmspace kit 1.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <div className="p-6 md:p-7">
+                    <h3 className="heading-3 text-inkwell mb-2">Measurable ROI</h3>
+                    <p className="caption text-inkwell/70">For the C-suite who needs defensible spend. Connect spatial behaviour to business outcomes with clear, auditable data. No anecdotes. No estimates.</p>
+                    <Link href="/solutions/measurable-roi" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
+                  </div>
                 </div>
                 <div className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
                   <StatCard variant="mist">
@@ -248,31 +266,37 @@ export default function Home() {
                   story: "Full-funnel measurement from awareness to conversion. Know which moments drove the deepest engagement — and which touchpoints need work.",
                   cta: "See how it works",
                   href: "/solutions/brand-activations",
+                  img: "/images/realmspace kit 2.png",
                 },
                 {
                   title: "Trade shows & conferences",
                   story: "Multi-booth measurement across an entire show floor. Real-time traffic, dwell, and engagement data for every sponsor, every hour.",
                   cta: "Explore trade show ROI",
                   href: "/solutions/trade-shows-and-conferences",
+                  img: "/images/Zone_comparison_dashboard_with_realmspace_design_c-1782596167806.png",
                 },
                 {
                   title: "Retail & flagship stores",
                   story: "Permanent installation measurement for showrooms and retail. Understand foot traffic, display conversion, and what drives repeat visits.",
                   cta: "See retail analytics",
                   href: "/solutions/retail-flagship",
+                  img: "/images/Add_realmspace_branding_in_lowercase_to_the_wall-1782596319532.png",
                 },
               ].map((item) => (
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="bg-white rounded-xl p-8 border border-mist/30 shadow-card group hover:shadow-elevated hover:border-cobalt/15 transition-all duration-300 h-full flex flex-col"
+                  className="bg-white rounded-xl border border-mist/30 shadow-card group hover:shadow-elevated hover:border-cobalt/15 transition-all duration-300 h-full flex flex-col overflow-hidden"
                 >
-                  <p className="text-sm font-semibold text-inkwell/30 mb-4 tracking-tight">{item.title}</p>
-                  <p className="caption text-inkwell/70 leading-relaxed mb-6 flex-1">{item.story}</p>
-                  <span className="link-arrow group-hover:underline">
-                    {item.cta}
-                    <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
-                  </span>
+                  <img src={item.img} alt="" className="w-full aspect-video object-cover" />
+                  <div className="p-6 md:p-7 flex flex-col flex-1">
+                    <p className="text-sm font-semibold text-inkwell/30 mb-3 tracking-tight">{item.title}</p>
+                    <p className="caption text-inkwell/70 leading-relaxed mb-6 flex-1">{item.story}</p>
+                    <span className="link-arrow group-hover:underline">
+                      {item.cta}
+                      <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+                    </span>
+                  </div>
                 </Link>
               ))}
             </div>

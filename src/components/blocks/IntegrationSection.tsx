@@ -4,12 +4,12 @@ import Link from "next/link";
 import { FadeIn } from "./FadeIn";
 
 const integrations = [
-  { name: "Salesforce", src: "/images/Salesforce-logo.webp" },
+  { name: "Salesforce", src: "/images/logomarks/salesforce.svg" },
   { name: "HubSpot", src: "/images/logomarks/hubspot.svg" },
   { name: "Apollo", src: "/images/logomarks/apollo.svg" },
   { name: "Power BI", src: "/images/logomarks/powerbi.svg" },
-  { name: "Google Analytics", src: "/images/Google_analytics-1024x576.png" },
-  { name: "Slack", src: "/images/Slack-logo.png" },
+  { name: "Google Analytics", src: "/images/logomarks/googleanalytics.svg" },
+  { name: "Slack", src: "/images/logomarks/slack.svg" },
 ];
 
 const fallbackLogo = (name: string) => (
