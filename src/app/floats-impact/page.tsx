@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Floats Impact — Floats",
-  description: "See the measurable impact of realmspace across 500+ activations in 12 countries.",
+  description: "See the measurable impact of realmspace across 16+ live deployments in 12 countries.",
 };
 
 export default function FloatsImpactPage() {

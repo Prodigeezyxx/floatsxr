@@ -27,7 +27,7 @@ export default function EnterprisePage() {
           },
           {
             title: "Enterprise Security",
-            body: "SOC 2-compliant infrastructure, data residency options, SSO/SAML, role-based access control, and dedicated privacy reviews.",
+            body: "Enterprise-grade infrastructure with data residency options, SSO/SAML, role-based access control, and dedicated privacy reviews.",
             linkLabel: "View security",
             linkHref: "/enterprise/security",
           },

@@ -12,24 +12,20 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Floats — Spatial Intelligence for Physical Experiences",
+    default: "Floats — Trade Show ROI & Brand Activation Measurement Platform",
     template: "%s | Floats",
   },
   description:
-    "realmspace helps brands and venue operators see what happened in a physical experience, prove what worked, and improve what happens next.",
+    "Measure trade show ROI, brand activation performance, and experiential marketing impact. realmspace by Floats turns physical events into attributable reports your CFO will approve.",
   openGraph: {
-    title: "Floats — Spatial Intelligence for Physical Experiences",
+    title: "Floats — Trade Show ROI & Brand Activation Measurement",
     description:
-      "realmspace captures, measures, and improves every physical experience.",
+      "Measure, prove, and improve every physical activation with attribution-ready analytics. Book a pilot.",
     type: "website",
     siteName: "Floats",
   },
   twitter: {
     card: "summary_large_image",
-  },
-  themeColor: "#130032",
-  other: {
-    "color-scheme": "light",
   },
 };
 
