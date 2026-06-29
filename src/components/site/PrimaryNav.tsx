@@ -158,7 +158,7 @@ export function PrimaryNav() {
     >
       <div className="grid-container flex items-center justify-between h-[72px]">
         <Link href="/" className="hover:opacity-80 transition-opacity">
-          <img src="/images/floats logo.png" alt="Floats" className="h-7 md:h-8 w-auto" />
+          <img src="/images/floats transparent.png" alt="Floats" className="h-7 md:h-8 w-auto" />
         </Link>
 
         {/* Desktop nav */}
