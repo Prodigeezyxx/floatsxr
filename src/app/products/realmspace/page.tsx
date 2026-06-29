@@ -55,10 +55,10 @@ export default function RealmspacePage() {
           <div className="bg-white border border-mist/30 rounded-lg p-8 md:p-12 max-w-[900px] mx-auto">
             <h2 className="heading-2 text-inkwell mb-4">What is realmspace?</h2>
             <p className="body-lg text-inkwell/70 leading-relaxed">
-              realmspace is a intelligence layer for physical experiences. It uses
-              spatial telemetry — not cameras, not facial recognition — to capture engagement
-              signals across booths, zones, kiosks, and branded touchpoints. The output is a
-              clear, plain-English read on what happened, what worked, and what to do next.
+              realmspace is an intelligence layer for physical experiences. It uses
+              spatial telemetry to capture engagement signals across booths, zones, kiosks, and
+              branded touchpoints. The output is a clear, plain-English read on what happened,
+              what worked, and what to do next.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link

@@ -21,13 +21,13 @@ export default function Home() {
         features={[
           {
             title: "Measure",
-            body: "Know exactly what happened. Every visitor, dwell time, interaction, and journey — without surveys or guesswork. Deploy realmspace and see your activation through data.",
+            body: "Know exactly what happened. Every visitor, dwell time, interaction, and journey. Deploy realmspace and see your activation through data.",
             linkLabel: "How it works",
             linkHref: "/products/realmspace",
           },
           {
             title: "Prove",
-            body: "Attribution-ready reports your marketing, sales, and finance teams actually use. Walk out with proof of engagement, reach, and ROI — not a folder of photos.",
+            body: "Attribution-ready reports your marketing, sales, and finance teams actually use. Walk out with proof of engagement, reach, and ROI. Every metric your CFO needs.",
             linkLabel: "See sample reports",
             linkHref: "/products/realmspace/insight-reports",
           },
@@ -173,7 +173,7 @@ export default function Home() {
                   <img src="/images/realmspace kit 1.png" alt="" className="w-full aspect-[16/10] object-cover" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Measurable ROI</h3>
-                    <p className="caption text-inkwell/70">For the C-suite who needs defensible spend. Connect spatial behaviour to business outcomes with clear, auditable data. No anecdotes. No estimates.</p>
+                    <p className="caption text-inkwell/70">For the C-suite who needs defensible spend. Connect spatial behaviour to business outcomes with clear, auditable data your finance team can defend.</p>
                     <Link href="/solutions/measurable-roi" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 mt-4 group hover:underline">Learn more <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">&rarr;</span></Link>
                   </div>
                 </div>
@@ -259,7 +259,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="heading-1 text-inkwell">Built for real activations</h2>
               <p className="body-lg text-inkwell/60 mt-3">
-                From Lagos launch events to international trade shows — realmspace measures what matters across every deployment.
+                From Lagos launch events to international trade shows. realmspace measures what matters across every deployment.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Sponsor Measurement — Floats",
-  description: "Give sponsors a reason to come back. Show them exactly what their investment delivered, with numbers not anecdotes, using realmspace.",
+  description: "Give sponsors a reason to come back. Show them exactly what their investment delivered using realmspace engagement data.",
 };
 
 export default function SponsorMeasurementPage() {
@@ -15,7 +15,7 @@ export default function SponsorMeasurementPage() {
         <p className="body-lg text-inkwell/70 mt-6">
           Give sponsors a reason to come back. realmspace captures engagement data across
           every sponsored touchpoint, so you can show exactly what their investment
-          delivered — with numbers, not anecdotes.
+          delivered.
         </p>
         <div className="mt-8">
           <Link href="/solutions" className="text-cobalt text-sm font-medium inline-flex items-center gap-1 hover:underline">
