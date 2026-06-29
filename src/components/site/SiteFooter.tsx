@@ -69,8 +69,8 @@ export function SiteFooter() {
       <div className="grid-container py-16 md:py-20">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10 mb-16 pb-12 border-b border-white/10">
           <div className="max-w-[320px]">
-            <Link href="/" className="text-white font-semibold text-xl tracking-tight">
-              Floats
+            <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
+              <img src="/images/floats logo.png" alt="Floats" className="h-7 md:h-8 w-auto brightness-0 invert" />
             </Link>
             <p className="text-sm text-white/50 mt-4 leading-relaxed">
               Spatial intelligence for physical experiences. Measure what matters,
