@@ -46,7 +46,10 @@ export default function Home() {
           <div className="grid-container">
             <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-inkwell/50">
               <span className="font-medium text-inkwell/70">Backed by</span>
-              <span className="tracking-tight font-semibold text-inkwell/40">NVIDIA</span>
+              <span className="flex items-center gap-2">
+                <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-6 w-auto" />
+                <span className="tracking-tight font-semibold text-inkwell/40">NVIDIA</span>
+              </span>
               <span className="text-mist/40">|</span>
               <span className="tracking-tight font-semibold text-inkwell/40">AWS</span>
               <span className="text-mist/40">|</span>

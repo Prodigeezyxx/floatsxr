@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { FadeIn } from "./FadeIn";
-import { ScreenshotFrame } from "./ScreenshotFrame";
 
 export function HomeHero() {
   return (
@@ -50,11 +49,19 @@ export function HomeHero() {
 
           <FadeIn direction="right" delay={0.12} className="relative">
             <div className="absolute -inset-4 bg-cobalt/5 rounded-2xl blur-2xl pointer-events-none" />
-            <div className="relative shadow-glow rounded-xl">
-              <ScreenshotFrame
-                src="/images/Automation_dashboard_with_consistent_realmspace_br-1782596152361.png"
-                alt="realmspace automation dashboard"
-              />
+            <div className="relative shadow-glow rounded-xl border border-mist/40 bg-white p-1.5 overflow-hidden">
+              <div className="rounded-lg overflow-hidden bg-inkwell/5">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster="/images/Automation_dashboard_with_consistent_realmspace_br-1782596152361.png"
+                  className="w-full h-auto object-contain"
+                >
+                  <source src="/images/realspace demo video.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
           </FadeIn>
         </div>
