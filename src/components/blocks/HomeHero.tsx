@@ -21,9 +21,9 @@ export function HomeHero() {
               Turn live brand moments into measured outcomes.
             </h1>
             <p className="body-lg text-inkwell/60 mt-5 max-w-[520px] text-pretty">
-              Floats turns activations, showrooms, trade shows, and retail
-              experiences into reports your CFO will sign off on.
-              Measure what happened. Prove what it was worth.
+              Optimise IRL activations, showrooms, and brand experiences with
+              spatial intelligence. Measure what matters across every deployment,
+              then trigger smarter decisions for the next one.
             </p>
             <div className="flex flex-wrap items-center gap-3 mt-8">
               <Link
