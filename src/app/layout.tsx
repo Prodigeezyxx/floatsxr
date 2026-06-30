@@ -44,8 +44,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-ecru text-inkwell font-sans overflow-x-hidden">
+    <html lang="en" className={`${inter.variable} h-full antialiased overflow-x-hidden`}>
+      <body className="min-h-full flex flex-col bg-ecru text-inkwell font-sans">
         <SiteShell>{children}</SiteShell>
       </body>
     </html>
