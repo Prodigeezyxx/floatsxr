@@ -7,7 +7,7 @@ import { FadeIn } from "./FadeIn";
 export function HomeHero() {
   return (
     <section className="relative overflow-hidden gradient-mesh pattern-grid">
-      <div className="absolute inset-0 bg-gradient-to-b from-action/5 via-transparent to-base pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-ecru pointer-events-none" />
       <div className="grid-container relative pt-16 md:pt-24 pb-12 md:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <FadeIn>

@@ -5,51 +5,39 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'IBM Plex Mono', 'JetBrains Mono', ui-monospace, monospace;
+  --font-sans: 'Inter', 'Söhne', system-ui, -apple-system, sans-serif;
 
-  --color-base: #0A0B10;
-  --color-action: #FF5C00;
-  --color-data-blue: #3B82F6;
-  --color-data-teal: #00D4AA;
-  --color-surface: #13141A;
+  --color-cobalt: #4C00FF;
+  --color-inkwell: #130032;
+  --color-deep-violet: #26065D;
+  --color-mist: #CBC2FF;
+  --color-ecru: #F8F3F0;
+  --color-poppy: #FF5252;
 
-  --color-background: #0A0B10;
+  --color-background: #F8F3F0;
+  --color-foreground: #130032;
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: #130032;
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: #130032;
+  --color-primary: #4C00FF;
+  --color-primary-foreground: oklch(1 0 0);
+  --color-secondary: #CBC2FF;
+  --color-secondary-foreground: #130032;
+  --color-muted: #CBC2FF;
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-accent: #4C00FF;
+  --color-accent-foreground: oklch(1 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: #CBC2FF;
+  --color-input: oklch(1 0 0);
+  --color-ring: #4C00FF;
 
-  /* remapped old tokens → new dark values */
-  --color-cobalt: #FF5C00;
-  --color-inkwell: #FFFFFF;
-  --color-ecru: #0A0B10;
-  --color-deep-violet: #13141A;
-  --color-mist: rgba(255, 255, 255, 0.14);
-  --color-poppy: #FF5C00;
-
-  --color-foreground: #FFFFFF;
-  --color-card: #13141A;
-  --color-card-foreground: #FFFFFF;
-  --color-popover: #13141A;
-  --color-popover-foreground: #FFFFFF;
-  --color-primary: #FF5C00;
-  --color-primary-foreground: #0A0B10;
-  --color-secondary: rgba(255, 255, 255, 0.08);
-  --color-secondary-foreground: #FFFFFF;
-  --color-muted: rgba(255, 255, 255, 0.06);
-  --color-muted-foreground: rgba(255, 255, 255, 0.45);
-  --color-accent: #FF5C00;
-  --color-accent-foreground: #0A0B10;
-  --color-destructive: #FF5C00;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-input: #13141A;
-  --color-ring: #FF5C00;
-
-  --radius: 0;
-  --radius-sm: 0;
-  --radius-md: 0;
-  --radius-lg: 0;
-  --radius-xl: 0;
-  --radius-2xl: 0;
-  --radius-3xl: 0;
-  --radius-pill: 0;
+  --radius: 0.75rem;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
 }
 
 @layer base {
@@ -58,34 +46,11 @@
   }
 
   body {
-    @apply bg-base text-foreground antialiased;
+    @apply bg-ecru text-inkwell antialiased;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
-  /* Dark-mode override: map bg-white to dark surface */
-  .bg-white {
-    background-color: rgb(19 20 26 / var(--tw-bg-opacity, 1));
-  }
-
-  /* Boost text contrast on #0A0B10 base — low white opacities become invisible */
-  .text-inkwell { color: rgba(255, 255, 255, 0.95); }
-  .text-inkwell\/35 { color: rgba(255, 255, 255, 0.55) !important; }
-  .text-inkwell\/40 { color: rgba(255, 255, 255, 0.6) !important; }
-  .text-inkwell\/45 { color: rgba(255, 255, 255, 0.65) !important; }
-  .text-inkwell\/50 { color: rgba(255, 255, 255, 0.72) !important; }
-  .text-inkwell\/60 { color: rgba(255, 255, 255, 0.8) !important; }
-  .text-inkwell\/65 { color: rgba(255, 255, 255, 0.85) !important; }
-  .text-inkwell\/70 { color: rgba(255, 255, 255, 0.88) !important; }
-  .text-inkwell\/80 { color: rgba(255, 255, 255, 0.92) !important; }
-
-
-  /* Fix circle bg that was rendering white on white */
-  .bg-cobalt\/5 { background-color: rgba(255, 92, 0, 0.08); }
-  .bg-cobalt\/10 { background-color: rgba(255, 92, 0, 0.12); }
-  .hover\:bg-cobalt\/5:hover { background-color: rgba(255, 92, 0, 0.12); }
-  .hover\:bg-cobalt\/90:hover { background-color: rgba(255, 92, 0, 0.9); }
 
   html {
     @apply font-sans;
@@ -93,88 +58,73 @@
   }
 
   ::selection {
-    background-color: color-mix(in srgb, var(--color-action) 30%, transparent);
-    color: var(--color-foreground);
+    background-color: color-mix(in srgb, var(--color-cobalt) 18%, transparent);
+    color: var(--color-inkwell);
   }
 
-  h1, h2 {
-    font-weight: 600;
-    letter-spacing: -0.02em;
-  }
-
-  h3, h4 {
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
+  h1, h2 { font-weight: 400; letter-spacing: -0.025em; }
+  h3, h4 { font-weight: 500; letter-spacing: -0.015em; }
 }
 
 /* Typography utilities */
 @utility display-xl {
-  font-family: var(--font-sans);
   font-size: clamp(72px, 9vw, 128px);
   line-height: 1;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  letter-spacing: -0.04em;
   text-wrap: balance;
 }
 
 @utility display-lg {
-  font-family: var(--font-sans);
   font-size: clamp(56px, 7vw, 96px);
   line-height: 1.05;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  letter-spacing: -0.035em;
   text-wrap: balance;
 }
 
 @utility display-md {
-  font-family: var(--font-sans);
   font-size: clamp(40px, 5vw, 64px);
   line-height: 1.1;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  letter-spacing: -0.03em;
   text-wrap: balance;
 }
 
 @utility display-sm {
-  font-family: var(--font-sans);
   font-size: clamp(32px, 4vw, 48px);
   line-height: 1.15;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  letter-spacing: -0.025em;
   text-wrap: balance;
 }
 
 @utility heading-1 {
-  font-family: var(--font-sans);
   font-size: clamp(32px, 4vw, 56px);
   line-height: 1.15;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  letter-spacing: -0.025em;
   text-wrap: balance;
 }
 
 @utility heading-2 {
-  font-family: var(--font-sans);
   font-size: clamp(28px, 3vw, 40px);
   line-height: 1.2;
-  font-weight: 600;
-  letter-spacing: -0.015em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
   text-wrap: balance;
 }
 
 @utility heading-3 {
-  font-family: var(--font-sans);
   font-size: 24px;
   line-height: 1.3;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @utility heading-4 {
-  font-family: var(--font-sans);
   font-size: 20px;
   line-height: 1.35;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @utility body-lg {
@@ -196,74 +146,75 @@
 }
 
 @utility micro {
-  font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.4;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-/* Data / stat utility */
-@utility data-stat {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  line-height: 1.4;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-}
-
-/* Data display numbers */
-@utility data-number {
-  font-family: var(--font-mono);
-  font-size: clamp(32px, 4vw, 48px);
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-}
-
 /* Gradient backgrounds */
+@utility gradient-pearl {
+  background: linear-gradient(180deg, #F8F3F0 0%, #FFFFFF 100%);
+}
+
+@utility gradient-atmosphere {
+  background: linear-gradient(135deg, #CBC2FF 0%, #4C00FF 100%);
+}
+
+@utility gradient-haze {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(255, 255, 255, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 100%, rgba(255, 82, 82, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, #4C00FF 0%, #26065D 100%);
+}
+
 @utility gradient-mesh {
   background:
-    radial-gradient(ellipse 80% 60% at 20% 0%, rgba(255, 92, 0, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% 100%, rgba(59, 130, 246, 0.06) 0%, transparent 50%),
-    linear-gradient(180deg, #0A0B10 0%, #13141A 100%);
+    radial-gradient(ellipse 70% 50% at 10% 20%, rgba(76, 0, 255, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 10%, rgba(203, 194, 255, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 30% at 70% 80%, rgba(255, 82, 82, 0.04) 0%, transparent 50%),
+    linear-gradient(180deg, #FFFFFF 0%, #F8F3F0 100%);
 }
 
 @utility pattern-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(19, 0, 50, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 0, 50, 0.03) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 @utility gradient-glow {
-  background: linear-gradient(135deg, #FF5C00 0%, #3B82F6 100%);
+  background: linear-gradient(135deg, #FF5252 0%, #4C00FF 100%);
 }
 
 @utility shadow-card {
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 1px 2px rgba(19, 0, 50, 0.04),
+    0 4px 12px rgba(19, 0, 50, 0.04);
 }
 
 @utility shadow-elevated {
   box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.08),
-    0 8px 32px rgba(0, 0, 0, 0.4);
+    0 0 0 1px rgba(19, 0, 50, 0.04),
+    0 2px 4px rgba(19, 0, 50, 0.04),
+    0 12px 32px rgba(19, 0, 50, 0.08);
 }
 
 @utility shadow-glow {
   box-shadow:
-    0 0 0 1px rgba(255, 92, 0, 0.15),
-    0 0 24px rgba(255, 92, 0, 0.08);
+    0 0 0 1px rgba(76, 0, 255, 0.08),
+    0 8px 40px rgba(76, 0, 255, 0.12);
 }
 
 @utility surface-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border-subtle);
+  background: white;
+  border: 1px solid color-mix(in srgb, var(--color-mist) 40%, transparent);
+  border-radius: var(--radius-md);
 }
 
 @utility link-arrow {
-  @apply text-action text-sm font-medium inline-flex items-center gap-1.5;
+  @apply text-cobalt text-sm font-medium inline-flex items-center gap-1.5;
 }
 
 @utility grid-container {

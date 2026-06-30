@@ -1,27 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Mono, Sora } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/site/SiteShell";
-
-const sora = Sora({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-  variable: "--font-sans",
-});
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   display: "swap",
   variable: "--font-inter",
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  display: "swap",
-  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -49,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sora.variable} ${inter.variable} ${ibmPlexMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-base text-foreground font-sans overflow-x-hidden">
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-ecru text-inkwell font-sans overflow-x-hidden">
         <SiteShell>{children}</SiteShell>
       </body>
     </html>
