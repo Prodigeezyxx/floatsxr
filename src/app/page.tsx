@@ -271,7 +271,7 @@ export default function Home() {
                   story: "Permanent installation measurement for showrooms and retail. Understand foot traffic, display conversion, and what drives repeat visits.",
                   cta: "See retail analytics",
                   href: "/solutions/retail-flagship",
-                  img: "/images/age 2026.png",
+                  img: "/images/kuda 2025.png",
                 },
               ].map((item) => (
                 <Link
