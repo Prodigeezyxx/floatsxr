@@ -49,33 +49,6 @@ export default function Home() {
         ]}
       />
 
-      {/* SECTION 2: Social proof — real backing, real deployments */}
-      <FadeIn>
-        <section className="bg-ecru py-16 md:py-20 border-y border-mist/20">
-          <div className="grid-container">
-            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm text-inkwell/50">
-              <span className="font-medium text-inkwell/70">Backed by</span>
-              <span className="flex items-center gap-2">
-                <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-6 w-auto" />
-                <span className="tracking-tight font-semibold text-inkwell/40">NVIDIA</span>
-              </span>
-              <span className="text-mist/40">|</span>
-              <span className="flex items-center gap-1.5">
-                <img src="/images/awsnactivate png.png" alt="AWS Activate" className="h-5 w-auto" />
-                <span className="tracking-tight font-semibold text-inkwell/40">AWS Activate</span>
-              </span>
-              <span className="text-mist/40">|</span>
-              <span className="flex items-center gap-1.5">
-                <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-5 w-auto" />
-                <span className="tracking-tight font-semibold text-inkwell/40">Microsoft for Startups</span>
-              </span>
-              <span className="text-mist/40 hidden sm:inline">|</span>
-              <span className="font-medium text-inkwell/70 ml-0 sm:ml-2">Deployed across 16+ live environments</span>
-            </div>
-          </div>
-        </section>
-      </FadeIn>
-
       {/* SECTION 3: Filter pills with solution cards */}
       <FilterPills
         eyebrow="View solutions"
@@ -250,16 +223,6 @@ export default function Home() {
       {/* SECTION 6: Integration section */}
       <IntegrationSection />
 
-      <section className="bg-white py-16 md:py-20 border-b border-mist/20">
-        <div className="grid-container text-center max-w-[800px] mx-auto">
-          <div className="rounded-xl overflow-hidden shadow-card border border-mist/40">
-            <video autoPlay muted loop playsInline className="w-full h-auto object-contain">
-              <source src="/images/realspace demo video.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-      </section>
-
       {/* SECTION 7: Trust stats + compliance badges */}
       <TrustBar
         stats={[
@@ -294,21 +257,21 @@ export default function Home() {
                   story: "Full-funnel measurement from awareness to conversion. Know which moments drove the deepest engagement — and which touchpoints need work.",
                   cta: "See how it works",
                   href: "/solutions/brand-activations",
-                  img: "/images/realmspace kit 2.png",
+                  isVideo: true,
                 },
                 {
                   title: "Trade shows & conferences",
                   story: "Multi-booth measurement across an entire show floor. Real-time traffic, dwell, and engagement data for every sponsor, every hour.",
                   cta: "Explore trade show ROI",
                   href: "/solutions/trade-shows-and-conferences",
-                  img: "/images/Zone_comparison_dashboard_with_realmspace_design_c-1782596167806.png",
+                  img: "/images/kuda 2025.png",
                 },
                 {
                   title: "Retail & flagship stores",
                   story: "Permanent installation measurement for showrooms and retail. Understand foot traffic, display conversion, and what drives repeat visits.",
                   cta: "See retail analytics",
                   href: "/solutions/retail-flagship",
-                  img: "/images/Add_realmspace_branding_in_lowercase_to_the_wall-1782596319532.png",
+                  img: "/images/age 2026.png",
                 },
               ].map((item) => (
                 <Link
@@ -316,7 +279,13 @@ export default function Home() {
                   href={item.href}
                   className="bg-white rounded-xl border border-mist/30 shadow-card group hover:shadow-elevated hover:border-cobalt/15 transition-all duration-300 h-full flex flex-col overflow-hidden"
                 >
-                  <img src={item.img} alt="" className="w-full aspect-video object-cover" />
+                  {item.isVideo ? (
+                    <video autoPlay muted loop playsInline className="w-full aspect-video object-cover">
+                      <source src="/images/realspace demo video.mp4" type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img src={item.img} alt="" className="w-full aspect-video object-cover" />
+                  )}
                   <div className="p-6 md:p-7 flex flex-col flex-1">
                     <p className="text-sm font-semibold text-inkwell/30 mb-3 tracking-tight">{item.title}</p>
                     <p className="caption text-inkwell/70 leading-relaxed mb-6 flex-1">{item.story}</p>
