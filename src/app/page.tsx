@@ -17,6 +17,15 @@ export default function Home() {
     <>
       <HomeHero />
 
+      <section className="bg-white py-16 md:py-20 border-b border-mist/20">
+        <div className="grid-container text-center">
+          <p className="micro text-cobalt mb-4">How realmspace works</p>
+          <h2 className="heading-1 text-inkwell max-w-[680px] mx-auto">
+            Measurement and Attribution for Every Activation You Run
+          </h2>
+        </div>
+      </section>
+
       <ThreeColumnFeatures
         features={[
           {
@@ -32,7 +41,7 @@ export default function Home() {
             linkHref: "/products/realmspace/insight-reports",
           },
           {
-            title: "Improve",
+            title: "Orchestrate",
             body: "Benchmark every activation against the last one. Compare dwell, traffic, and engagement across venues, booths, and campaigns. Every event gets better.",
             linkLabel: "Explore benchmarks",
             linkHref: "/resources/benchmarks",

@@ -22,15 +22,14 @@ export function HomeHero() {
             </h1>
             <p className="body-lg text-inkwell/60 mt-5 max-w-[520px] text-pretty">
               Optimise IRL activations, showrooms, and brand experiences with
-              spatial intelligence. Measure what matters across every deployment,
-              then trigger smarter decisions for the next one.
+              spatial intelligence. Orchestrate smarter decisions across every deployment.
             </p>
             <div className="flex flex-wrap items-center gap-3 mt-8">
               <Link
                 href="/get-a-demo"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-all hover:shadow-glow min-h-[44px]"
               >
-                Request a demo
+                Book a Pilot
                 <ArrowRight className="size-4" />
               </Link>
               <Link
