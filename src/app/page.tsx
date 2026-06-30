@@ -257,21 +257,21 @@ export default function Home() {
                   story: "Full-funnel measurement from awareness to conversion. Know which moments drove the deepest engagement — and which touchpoints need work.",
                   cta: "See how it works",
                   href: "/solutions/brand-activations",
-                  isVideo: true,
+                  img: "/images/Realistic_photograph_of_an_emerald_green_interacti-1782596058924.png",
                 },
                 {
                   title: "Trade shows & conferences",
                   story: "Multi-booth measurement across an entire show floor. Real-time traffic, dwell, and engagement data for every sponsor, every hour.",
                   cta: "Explore trade show ROI",
                   href: "/solutions/trade-shows-and-conferences",
-                  img: "/images/age-2026-3.png",
+                  img: "/images/Realistic_photograph_of_a_bright_orange_and_white_-1782596045852.png",
                 },
                 {
                   title: "Retail & flagship stores",
                   story: "Permanent installation measurement for showrooms and retail. Understand foot traffic, display conversion, and what drives repeat visits.",
                   cta: "See retail analytics",
                   href: "/solutions/retail-flagship",
-                  img: "/images/kuda-2025.png",
+                  img: "/images/Realistic_photograph_of_a_dark_charcoal_grey_angul-1782596012937.png",
                 },
               ].map((item) => (
                 <Link
@@ -279,13 +279,7 @@ export default function Home() {
                   href={item.href}
                   className="bg-white rounded-xl border border-mist/30 shadow-card group hover:shadow-elevated hover:border-cobalt/15 transition-all duration-300 h-full flex flex-col overflow-hidden"
                 >
-                  {item.isVideo ? (
-                    <video autoPlay muted loop playsInline className="w-full aspect-video object-cover">
-                      <source src="/images/realspace-demo-video.mp4" type="video/mp4" />
-                    </video>
-                  ) : (
-                    <img src={item.img} alt="" className="w-full aspect-video object-cover" />
-                  )}
+                  <img src={item.img} alt="" className="w-full aspect-video object-cover" />
                   <div className="p-6 md:p-7 flex flex-col flex-1">
                     <p className="text-sm font-semibold text-inkwell/30 mb-3 tracking-tight">{item.title}</p>
                     <p className="caption text-inkwell/70 leading-relaxed mb-6 flex-1">{item.story}</p>
@@ -325,19 +319,19 @@ export default function Home() {
             category: "Guide",
             title: "The Measurable Activation Playbook: How to Plan, Measure, and Improve Every Brand Experience",
             href: "/resources/guides",
-            imageSrc: "/images/Realistic_photograph_of_an_emerald_green_interacti-1782596058924.png",
+            imageSrc: "/images/age-2026-3.png",
           },
           {
             category: "Customer Story",
             title: "How a Global Retailer Uses realmspace to Measure Foot Traffic and In-Store Engagement",
             href: "/resources/case-studies",
-            imageSrc: "/images/Realistic_photograph_of_a_bright_orange_and_white_-1782596045852.png",
+            imageSrc: "/images/kuda-2025.png",
           },
           {
             category: "Research",
             title: "2026 Benchmark Report: Engagement Signals Across Retail, Trade Shows, and Brand Activations",
             href: "/resources/benchmarks",
-            imageSrc: "/images/Realistic_photograph_of_a_dark_charcoal_grey_angul-1782596012937.png",
+            imageSrc: "/images/Automation_dashboard_with_consistent_realmspace_br-1782596152361.png",
           },
         ]}
       />
