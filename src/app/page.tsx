@@ -17,9 +17,9 @@ export default function Home() {
     <>
       <HomeHero />
 
-      <section className="bg-white py-16 md:py-20 border-b border-mist/20">
+      <section className="bg-white py-10 md:py-14 border-b border-mist/20">
         <div className="grid-container text-center">
-          <p className="micro text-cobalt mb-4">How realmspace works</p>
+          <p className="micro text-cobalt mb-3">How realmspace works</p>
           <h2 className="heading-1 text-inkwell max-w-[680px] mx-auto">
             Measurement and Attribution for Every Activation You Run
           </h2>
