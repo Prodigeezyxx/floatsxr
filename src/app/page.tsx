@@ -6,7 +6,7 @@ import { StatCard } from "@/components/blocks/StatCard";
 import { Highlight } from "@/components/blocks/Highlight";
 import { ConversionPanel } from "@/components/blocks/ConversionPanel";
 import { FadeIn } from "@/components/blocks/FadeIn";
-import { TrustBar } from "@/components/blocks/TrustBar";
+
 import { FeatureCallout } from "@/components/blocks/FeatureCallout";
 import { IntegrationSection } from "@/components/blocks/IntegrationSection";
 import { BlogCards } from "@/components/blocks/BlogCards";
@@ -222,23 +222,6 @@ export default function Home() {
 
       {/* SECTION 6: Integration section */}
       <IntegrationSection />
-
-      {/* SECTION 7: Trust stats + compliance badges */}
-      <TrustBar
-        stats={[
-          { number: "16+", label: "Live deployments" },
-          { number: "12", label: "Countries" },
-          { number: "94%", label: "Client satisfaction" },
-          { number: "2.4×", label: "Sponsor renewal rate" },
-        ]}
-        badges={[
-          { name: "GDPR Compliant" },
-          { name: "ISO 27001" },
-          { name: "Anonymised by Design" },
-          { name: "No Facial Recognition" },
-          { name: "Session-Scoped Data" },
-        ]}
-      />
 
       {/* SECTION 8: Customer teases — real deployments */}
       <FadeIn>
