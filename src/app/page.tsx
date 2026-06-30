@@ -65,7 +65,10 @@ export default function Home() {
                 <span className="tracking-tight font-semibold text-inkwell/40">NVIDIA</span>
               </span>
               <span className="text-mist/40">|</span>
-              <span className="tracking-tight font-semibold text-inkwell/40">AWS</span>
+              <span className="flex items-center gap-1.5">
+                <img src="/images/aws-activate-logo.jpg" alt="AWS Activate" className="h-5 w-auto" />
+                <span className="tracking-tight font-semibold text-inkwell/40">AWS Activate</span>
+              </span>
               <span className="text-mist/40">|</span>
               <span className="flex items-center gap-1.5">
                 <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-5 w-auto" />

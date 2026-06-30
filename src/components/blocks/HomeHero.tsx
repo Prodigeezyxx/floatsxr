@@ -42,7 +42,7 @@ export function HomeHero() {
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-6">
               <span className="caption text-inkwell/50">Backed by</span>
               <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-5 w-auto" />
-              <span className="caption text-inkwell/60 font-semibold">AWS</span>
+              <img src="/images/aws-activate-logo.jpg" alt="AWS Activate" className="h-5 w-auto" />
               <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-7 w-auto" />
             </div>
           </FadeIn>
