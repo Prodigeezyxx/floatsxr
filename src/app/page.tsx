@@ -178,8 +178,8 @@ export default function Home() {
 
       {/* SECTION 4: Feature callout — outcome-driven */}
       <FeatureCallout
-        headline="Understand every activation with clarity and proof."
-        body="realmspace captures, attributes, and benchmarks every activation, showroom, and event. Automate insight reports, query your data in plain English, and connect signals across your entire programme."
+        headline="One Platform for Every Activation"
+        body="realmspace captures, attributes and benchmarks activation data, then routes it to your CRM and marketing tools through trigger rules you control. Query the data in plain English from the realmspace dashboard."
         primaryCta={{ label: "View plans and pricing", href: "/plans-and-pricing" }}
         secondaryCta={{ label: "Explore realmspace", href: "/products/realmspace" }}
         imageSrc="/images/Add_realmspace_branding_in_lowercase_to_the_gree-1782596070128.png"
