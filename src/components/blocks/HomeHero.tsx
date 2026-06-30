@@ -39,9 +39,12 @@ export function HomeHero() {
                 See a sample report
               </Link>
             </div>
-            <p className="caption text-inkwell/45 mt-6">
-              Backed by NVIDIA, AWS and Microsoft &middot; Deployed across 16+ environments
-            </p>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-6">
+              <span className="caption text-inkwell/50">Backed by</span>
+              <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-5 w-auto" />
+              <span className="caption text-inkwell/60 font-semibold">AWS</span>
+              <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-7 w-auto" />
+            </div>
           </FadeIn>
 
           <FadeIn direction="right" delay={0.12} className="relative">

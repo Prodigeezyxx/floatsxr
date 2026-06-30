@@ -58,7 +58,7 @@ export default function Home() {
       <FadeIn>
         <section className="bg-ecru py-16 md:py-20 border-y border-mist/20">
           <div className="grid-container">
-            <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-inkwell/50">
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm text-inkwell/50">
               <span className="font-medium text-inkwell/70">Backed by</span>
               <span className="flex items-center gap-2">
                 <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-6 w-auto" />
@@ -67,7 +67,10 @@ export default function Home() {
               <span className="text-mist/40">|</span>
               <span className="tracking-tight font-semibold text-inkwell/40">AWS</span>
               <span className="text-mist/40">|</span>
-              <span className="tracking-tight font-semibold text-inkwell/40">Microsoft</span>
+              <span className="flex items-center gap-1.5">
+                <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-5 w-auto" />
+                <span className="tracking-tight font-semibold text-inkwell/40">Microsoft for Startups</span>
+              </span>
               <span className="text-mist/40 hidden sm:inline">|</span>
               <span className="font-medium text-inkwell/70 ml-0 sm:ml-2">Deployed across 16+ live environments</span>
             </div>
