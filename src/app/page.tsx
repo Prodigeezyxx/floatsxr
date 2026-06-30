@@ -30,13 +30,13 @@ export default function Home() {
         features={[
           {
             title: "Measure",
-            body: "Know exactly what happened. Every visitor, dwell time, interaction, and journey. Deploy realmspace and see your activation through data.",
+            body: "Track entry, exit, dwell time and interactions for every visitor across your activation, in real time.",
             linkLabel: "How it works",
             linkHref: "/products/realmspace",
           },
           {
             title: "Prove",
-            body: "Attribution-ready reports your marketing, sales, and finance teams actually use. Walk out with proof of engagement, reach, and ROI. Every metric your CFO needs.",
+            body: "Generate an attribution report with engagement, reach and ROI numbers, ready before the activation breaks down.",
             linkLabel: "See sample reports",
             linkHref: "/products/realmspace/insight-reports",
           },
