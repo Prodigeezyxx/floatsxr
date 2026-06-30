@@ -158,7 +158,7 @@ export default function Home() {
             content: (
               <>
                 <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <img src="/images/realmspace kit 1.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <img src="/images/realmspace-kit-1.png" alt="" className="w-full aspect-[16/10] object-cover" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Measurable ROI</h3>
                     <p className="caption text-inkwell/70">For the C-suite who needs defensible spend. Connect spatial behaviour to business outcomes with clear, auditable data your finance team can defend.</p>
@@ -271,7 +271,7 @@ export default function Home() {
                   story: "Permanent installation measurement for showrooms and retail. Understand foot traffic, display conversion, and what drives repeat visits.",
                   cta: "See retail analytics",
                   href: "/solutions/retail-flagship",
-                  img: "/images/kuda 2025.png",
+                  img: "/images/kuda-2025.png",
                 },
               ].map((item) => (
                 <Link
@@ -281,7 +281,7 @@ export default function Home() {
                 >
                   {item.isVideo ? (
                     <video autoPlay muted loop playsInline className="w-full aspect-video object-cover">
-                      <source src="/images/realspace demo video.mp4" type="video/mp4" />
+                      <source src="/images/realspace-demo-video.mp4" type="video/mp4" />
                     </video>
                   ) : (
                     <img src={item.img} alt="" className="w-full aspect-video object-cover" />

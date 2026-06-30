@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    icon: "/images/floats transparent.png",
+    icon: "/images/floats-transparent.png",
   },
 };
 

@@ -8,32 +8,32 @@ export const metadata: Metadata = {
 
 const charts = [
   {
-    src: "/images/benchmark gfx 1.jpg",
+    src: "/images/benchmark-gfx-1.jpg",
     title: "Overall Engagement",
     description: "Aggregated dwell time, interaction rate, and traffic patterns across all measured activations.",
   },
   {
-    src: "/images/benchmark gfx 1 (2).jpg",
+    src: "/images/benchmark-gfx-1-2.jpg",
     title: "Trade Shows & Conferences",
     description: "Booth traffic density, peak engagement hours, and lead capture rates from trade show deployments.",
   },
   {
-    src: "/images/benchmark gfx 1 (3).jpg",
+    src: "/images/benchmark-gfx-1-3.jpg",
     title: "Retail & Flagship",
     description: "Foot traffic conversion, display interaction rates, and repeat visit patterns for retail environments.",
   },
   {
-    src: "/images/benchmark gfx 1 (4).jpg",
+    src: "/images/benchmark-gfx-1-4.jpg",
     title: "Brand Activations",
     description: "Dwell time distribution, content interaction depth, and audience capture metrics from activation zones.",
   },
   {
-    src: "/images/benchmark gfx 1 (5).jpg",
+    src: "/images/benchmark-gfx-1-5.jpg",
     title: "Sponsor Measurement",
     description: "Sponsor ROI benchmarks, audience reach, and engagement retention for sponsored activations.",
   },
   {
-    src: "/images/benchmark gfx 1 (6).jpg",
+    src: "/images/benchmark-gfx-1-6.jpg",
     title: "Venue Operations",
     description: "Space utilisation rates, traffic flow patterns, and bottleneck analysis for venue operators.",
   },

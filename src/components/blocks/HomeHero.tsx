@@ -12,7 +12,7 @@ export function HomeHero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <FadeIn>
             <div className="flex items-center gap-3 mb-6">
-              <img src="/images/floats transparent.png" alt="Floats" className="h-5 w-auto" />
+              <img src="/images/floats-transparent.png" alt="Floats" className="h-5 w-auto" />
               <span className="text-[11px] font-medium tracking-[0.1em] text-inkwell/35">
                 realmspace
               </span>
@@ -59,7 +59,7 @@ export function HomeHero() {
                   poster="/images/Automation_dashboard_with_consistent_realmspace_br-1782596152361.png"
                   className="w-full h-auto object-contain"
                 >
-                  <source src="/images/realspace demo proooo.mp4" type="video/mp4" />
+                  <source src="/images/realspace-demo-proooo.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
