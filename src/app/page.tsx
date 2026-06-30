@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <HomeHero />
 
-      <section className="bg-white py-10 md:py-14 border-b border-mist/20">
+      <section className="bg-surface py-10 md:py-14 border-b border-border-subtle">
         <div className="grid-container text-center">
           <p className="micro text-cobalt mb-3">How realmspace works</p>
           <h2 className="heading-1 text-inkwell max-w-[680px] mx-auto">
@@ -51,7 +51,7 @@ export default function Home() {
 
       {/* SECTION 2: Social proof — real backing, real deployments */}
       <FadeIn>
-        <section className="bg-ecru py-16 md:py-20 border-y border-mist/20">
+        <section className="bg-surface py-16 md:py-20 border-y border-border-subtle">
           <div className="grid-container">
             <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-inkwell/50">
               <span className="font-medium text-inkwell/70">Backed by</span>
@@ -208,7 +208,7 @@ export default function Home() {
       />
 
       {/* SECTION 5: See realmspace in action — dashboards */}
-      <section className="bg-white py-20 md:py-28">
+        <section className="bg-base py-20 md:py-28">
         <div className="grid-container">
           <FadeIn className="text-center mb-14">
             <p className="micro text-cobalt mb-4">Product tour</p>
@@ -263,7 +263,7 @@ export default function Home() {
 
       {/* SECTION 8: Customer teases — real deployments */}
       <FadeIn>
-        <section className="bg-white py-20 md:py-28">
+      <section className="bg-base py-20 md:py-28">
           <div className="grid-container">
             <div className="text-center mb-12">
               <h2 className="heading-1 text-inkwell">Built for real activations</h2>
