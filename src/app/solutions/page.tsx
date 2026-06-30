@@ -56,6 +56,52 @@ export default function SolutionsPage() {
           },
         ]}
       />
+      <section className="bg-white py-20 md:py-28 border-y border-mist/20">
+        <div className="grid-container">
+          <div className="text-center mb-14">
+            <p className="micro text-cobalt mb-4">Capabilities</p>
+            <h2 className="heading-1 text-inkwell">Built on spatial intelligence</h2>
+            <p className="body-lg text-inkwell/60 mt-3 max-w-[600px] mx-auto">
+              Every realmspace deployment runs on a stack designed for real-world activations.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {[
+              {
+                title: "AR/VR Technologies",
+                tags: "WebAR · Object Recognition · Geolocated AR",
+                body: "WebAR experiences, product try-ons and spatial mapping for augmented reality. Immersive training, virtual showrooms and branded environments for virtual reality.",
+              },
+              {
+                title: "3D/AI Integration",
+                tags: "Training Sims · Virtual Tours · Custom Environments",
+                body: "3D design built with AI integration: architectural walkthroughs, product renders and explainer animations powered by intelligent systems.",
+              },
+              {
+                title: "Spatial Tech",
+                tags: "Mixed Reality · Gesture Control · Spatial Awareness",
+                body: "Spatial computing interfaces that blend physical and digital space: mixed reality, gesture control and spatial awareness systems.",
+              },
+              {
+                title: "Real-time Rendering",
+                tags: "120fps · Real-time · Optimisation",
+                body: "Photorealistic rendering with advanced lighting, materials and physics, optimised for 120fps and ultra-low latency.",
+              },
+              {
+                title: "Immersive Booths",
+                tags: "Exhibition · Interactive · Brand Experience",
+                body: "Custom AR/VR booths for trade shows, museums and retail. Interactive exhibition spaces built for brand experiences people remember.",
+              },
+            ].map((item) => (
+              <div key={item.title} className="surface-card p-6 md:p-7 shadow-card hover:shadow-elevated transition-all duration-300">
+                <p className="text-sm font-semibold text-inkwell/30 mb-2 tracking-tight">{item.title}</p>
+                <p className="micro text-cobalt mb-3">{item.tags}</p>
+                <p className="caption text-inkwell/70 leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <ConversionPanel
         headline="Not sure which solution fits your activation?"
         ctaLabel="Talk to our team"
