@@ -264,7 +264,7 @@ export default function Home() {
                   story: "Multi-booth measurement across an entire show floor. Real-time traffic, dwell, and engagement data for every sponsor, every hour.",
                   cta: "Explore trade show ROI",
                   href: "/solutions/trade-shows-and-conferences",
-                  img: "/images/age 2026 3.png",
+                  img: "/images/age-2026-3.png",
                 },
                 {
                   title: "Retail & flagship stores",
