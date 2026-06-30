@@ -23,11 +23,6 @@ export default function Home() {
           <h2 className="heading-1 text-inkwell max-w-[680px] mx-auto">
             Measurement and Attribution for Every Activation You Run
           </h2>
-          <div className="mt-8 max-w-[640px] mx-auto rounded-xl overflow-hidden shadow-card border border-mist/40">
-            <video autoPlay muted loop playsInline className="w-full h-auto object-contain">
-              <source src="/images/realspace demo video.mp4" type="video/mp4" />
-            </video>
-          </div>
         </div>
       </section>
 
@@ -66,7 +61,7 @@ export default function Home() {
               </span>
               <span className="text-mist/40">|</span>
               <span className="flex items-center gap-1.5">
-                <img src="/images/aws-activate-logo.jpg" alt="AWS Activate" className="h-5 w-auto" />
+                <img src="/images/awsnactivate png.png" alt="AWS Activate" className="h-5 w-auto" />
                 <span className="tracking-tight font-semibold text-inkwell/40">AWS Activate</span>
               </span>
               <span className="text-mist/40">|</span>
@@ -254,6 +249,16 @@ export default function Home() {
 
       {/* SECTION 6: Integration section */}
       <IntegrationSection />
+
+      <section className="bg-white py-16 md:py-20 border-b border-mist/20">
+        <div className="grid-container text-center max-w-[800px] mx-auto">
+          <div className="rounded-xl overflow-hidden shadow-card border border-mist/40">
+            <video autoPlay muted loop playsInline className="w-full h-auto object-contain">
+              <source src="/images/realspace demo video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
 
       {/* SECTION 7: Trust stats + compliance badges */}
       <TrustBar
