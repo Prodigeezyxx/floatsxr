@@ -21,7 +21,7 @@ export default function Home() {
         <div className="grid-container text-center">
           <p className="micro text-cobalt mb-3">How realmspace works</p>
           <h2 className="heading-1 text-inkwell mx-auto max-w-[880px]">
-            Measurement and Attribution for Every Activation You Run
+            Precise Measurement and Attribution for Every Activation You Run
           </h2>
         </div>
       </section>
@@ -178,7 +178,7 @@ export default function Home() {
 
       {/* SECTION 4: Feature callout — outcome-driven */}
       <FeatureCallout
-        headline="One platform to measure every activation you run."
+        headline="Understand every activation with clarity and proof."
         body="realmspace captures, attributes, and benchmarks every activation, showroom, and event. Automate insight reports, query your data in plain English, and connect signals across your entire programme."
         primaryCta={{ label: "View plans and pricing", href: "/plans-and-pricing" }}
         secondaryCta={{ label: "Explore realmspace", href: "/products/realmspace" }}
