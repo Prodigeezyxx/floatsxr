@@ -23,6 +23,11 @@ export default function Home() {
           <h2 className="heading-1 text-inkwell max-w-[680px] mx-auto">
             Measurement and Attribution for Every Activation You Run
           </h2>
+          <div className="mt-8 max-w-[640px] mx-auto rounded-xl overflow-hidden shadow-card border border-mist/40">
+            <video autoPlay muted loop playsInline className="w-full h-auto object-contain">
+              <source src="/images/realspace demo video.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
 
