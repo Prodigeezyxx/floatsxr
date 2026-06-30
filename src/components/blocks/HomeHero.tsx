@@ -40,10 +40,10 @@ export function HomeHero() {
               </Link>
             </div>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-6">
-              <span className="caption text-inkwell/50">Backed by</span>
-              <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-5 w-auto" />
-              <img src="/images/awsnactivate png.png" alt="AWS Activate" className="h-5 w-auto" />
-              <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-7 w-auto" />
+              <span className="text-sm font-medium text-inkwell/50">Backed by</span>
+              <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-6 w-auto" />
+              <img src="/images/aws-activate-logo_final_trans-removebg-preview.png" alt="AWS Activate" className="h-6 w-auto" />
+              <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-8 w-auto" />
             </div>
           </FadeIn>
 
