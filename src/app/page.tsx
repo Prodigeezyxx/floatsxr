@@ -42,9 +42,9 @@ export default function Home() {
           },
           {
             title: "Orchestrate",
-            body: "Benchmark every activation against the last one. Compare dwell, traffic, and engagement across venues, booths, and campaigns. Every event gets better.",
-            linkLabel: "Explore benchmarks",
-            linkHref: "/resources/benchmarks",
+            body: "Push leads, engagement scores and zone data into your CRM and marketing tools automatically, based on trigger conditions you set: dwell time, repeat visits, QR scans.",
+            linkLabel: "See how triggers work",
+            linkHref: "/products/realmspace/triggers",
           },
         ]}
       />
