@@ -17,7 +17,7 @@ const caseStudies = [
       "The brief was to build a large-scale augmented reality activation that would anchor the exhibition floor. It had to draw attendees in, generate shareable moments, and capture data on how people engaged with AR in a live event environment.",
     ],
     solution: [
-      "Floats XR designed and deployed a custom Augmented Reality Station. A large-scale interactive AR installation at the centre of the Moonshot 2023 exhibition floor.",
+      "Floats designed and deployed a custom Augmented Reality Station. A large-scale interactive AR installation at the centre of the Moonshot 2023 exhibition floor.",
     ],
     features: [
       "A multi-user AR experience that overlaid digital objects onto the physical exhibition floor, allowing multiple attendees to interact with the same virtual environment simultaneously",
@@ -30,7 +30,7 @@ const caseStudies = [
       { metric: "Average dwell time at AR Station", value: "7.2 minutes", meaning: "Attendees stayed at the installation more than 3x longer than the floor average. AR created a genuine anchor on the exhibition floor." },
       { metric: "Shareable content generated", value: "1,450+ social shares", meaning: "Brand-integrated AR content drove organic social reach, extending Moonshot's visibility beyond the physical event." },
       { metric: "Repeat engagement rate", value: "38% of users returned", meaning: "Leaderboard mechanics and evolving AR content drove repeat visits. Attendees came back to improve their scores and try new interactions." },
-      { metric: "Peak concurrent users", value: "24 simultaneous users", meaning: "The multi-user AR system handled high traffic without degradation, proving the scalability of the Floats XR platform." },
+      { metric: "Peak concurrent users", value: "24 simultaneous users", meaning: "The multi-user AR system handled high traffic without degradation, proving the scalability of the Floats platform." },
     ],
     whatTheyGot: "Before the 2023 edition, Moonshot had no way to measure what attendees actually did on the exhibition floor beyond headcounts and anecdotal feedback. The AR Station and its underlying intelligence layer gave the Moonshot team a complete picture of engagement: which AR experiences resonated most, how long people stayed, and what drove repeat visits. For the first time, Moonshot had data they could use to brief sponsors, price exhibition space, and prove the ROI of immersive activations to future partners.",
     learned: [
@@ -52,10 +52,10 @@ const caseStudies = [
       "The challenge was to take the 2023 proof-of-concept and turn it into a platform that could serve multiple sponsors simultaneously, handle higher traffic, and produce attribution-grade data for every activation on the floor.",
     ],
     solution: [
-      "Floats XR deployed a multi-zone AR experience spanning the entire Moonshot 2024 exhibition floor. A network of interconnected AR stations, each with sponsor-integrated content, all feeding into a unified intelligence layer.",
+      "Floats deployed a multi-zone AR experience spanning the entire Moonshot 2024 exhibition floor. A network of interconnected AR stations, each with sponsor-integrated content, all feeding into a unified intelligence layer.",
     ],
     features: [
-      "Multiple AR stations distributed across the exhibition floor, each with unique sponsor-branded AR content. Sponsors could run their own immersive activations within the larger Floats XR ecosystem.",
+      "Multiple AR stations distributed across the exhibition floor, each with unique sponsor-branded AR content. Sponsors could run their own immersive activations within the larger Floats ecosystem.",
       "Unified attendee journey tracking across zones. RealmSpace captured how attendees moved between AR stations, which sponsor activations they engaged with, and the sequence of their interactions across the floor.",
       "Enhanced multi-user capability supporting higher concurrent traffic, with load-balanced AR rendering that maintained performance during peak periods",
       "Real-time analytics dashboard visible to Moonshot organisers and sponsors during the event, showing live engagement data, dwell times, and floor traffic patterns",
@@ -63,12 +63,12 @@ const caseStudies = [
     ],
     results: [
       { metric: "Total AR interactions", value: "12,650 interactions", meaning: "Nearly 3x the 2023 volume. Scaling from a single station to multiple zones drove exponential engagement growth." },
-      { metric: "Sponsor activations served", value: "6 sponsor-integrated AR experiences", meaning: "Multiple sponsors ran concurrent activations through the Floats XR platform, each with their own branded content and engagement data." },
+      { metric: "Sponsor activations served", value: "6 sponsor-integrated AR experiences", meaning: "Multiple sponsors ran concurrent activations through the Floats platform, each with their own branded content and engagement data." },
       { metric: "Average attendee journey", value: "4.2 AR zones per person", meaning: "Attendees visited multiple stations across the floor. The interconnected experience created a structured journey that maximised exposure for every sponsor." },
       { metric: "Sponsor engagement variance", value: "2.1x difference between top and bottom", meaning: "Revealed which sponsor activations drove the deepest engagement. Actionable intelligence for pricing and placement in future editions." },
       { metric: "Year-over-year dwell time increase", value: "+34% vs 2023", meaning: "Attendees spent longer on the floor overall. More zones, better content, and improved flow created a stickier experience." },
     ],
-    whatTheyGot: "Moonshot 2024 was a step-change from 2023. Instead of one AR installation, Moonshot had an entire exhibition floor running on Floats XR with per-sponsor engagement data, attendee journey mapping across zones, and year-over-year benchmarks. For the first time, Moonshot could tell each sponsor exactly how many people engaged with their activation, for how long, and how that compared to the floor average. That level of intelligence transformed how Moonshot sells exhibition space: from square footage to measurable impact.",
+    whatTheyGot: "Moonshot 2024 was a step-change from 2023. Instead of one AR installation, Moonshot had an entire exhibition floor running on Floats with per-sponsor engagement data, attendee journey mapping across zones, and year-over-year benchmarks. For the first time, Moonshot could tell each sponsor exactly how many people engaged with their activation, for how long, and how that compared to the floor average. That level of intelligence transformed how Moonshot sells exhibition space: from square footage to measurable impact.",
     learned: [
       "Multi-zone AR creates a structured floor journey. Attendees naturally move between stations when the experience rewards exploration, increasing total dwell time across the event.",
       "Sponsors respond to data. When sponsors received per-activation engagement reports, renewal interest increased significantly compared to previous editions without data.",
@@ -88,7 +88,7 @@ const caseStudies = [
       "The specific challenge: how do you make thousands of attendees feel connected to the broader story of African gaming, while capturing meaningful data about who was engaging and how?",
     ],
     solution: [
-      "Floats XR designed and deployed the Africa Gaming Map + Prediction Station. A large-scale, real-time interactive installation at the heart of the AGE 2026 exhibition floor.",
+      "Floats designed and deployed the Africa Gaming Map + Prediction Station. A large-scale, real-time interactive installation at the heart of the AGE 2026 exhibition floor.",
     ],
     features: [
       "A live, interactive map of the African gaming and gambling ecosystem, visualising studios, publishers, investment activity, and emerging markets across the continent in real time",
@@ -123,7 +123,7 @@ const caseStudies = [
       "The standard approach of banner stands, a TV screen, and a team member trying to get a word in edgeways was not working. Prestmit wanted their presence at Lagos Tech Fest to do something more than generate foot traffic. They wanted it to generate understanding, trust, and leads.",
     ],
     solution: [
-      "Floats XR designed and deployed the Trust Machine. A branded interactive game experience built specifically for Prestmit's booth at Lagos Tech Fest.",
+      "Floats designed and deployed the Trust Machine. A branded interactive game experience built specifically for Prestmit's booth at Lagos Tech Fest.",
     ],
     features: [
       "A custom-built, gamified experience that walked players through the core Prestmit product journey (convert, trust, transact) in a way that felt like play rather than a product demo",
@@ -158,7 +158,7 @@ const caseStudies = [
       "The standard conference kiosk with a tablet and a brochure website loaded up was not the answer. Kuda wanted their presence at Innovate AI to function as a product education experience, not just a brand visibility play. The goal was for people to leave understanding what Kuda does and with enough trust to download the app.",
     ],
     solution: [
-      "Floats XR designed and deployed the Kuda Kiosk. A custom interactive product kiosk built for Kuda's booth at Innovate AI.",
+      "Floats designed and deployed the Kuda Kiosk. A custom interactive product kiosk built for Kuda's booth at Innovate AI.",
     ],
     features: [
       "A purpose-built interactive interface that walked visitors through Kuda's core product features (account opening, fee-free banking, savings, transfers) in a self-guided, engaging format",
