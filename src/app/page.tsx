@@ -299,22 +299,22 @@ export default function Home() {
       <BlogCards
         posts={[
           {
-            category: "Guide",
-            title: "The Measurable Activation Playbook: How to Plan, Measure, and Improve Every Brand Experience",
-            href: "/resources/guides",
+            category: "Case Study",
+            title: "Event Intelligence — How AGE 2026 Used Real-Time Data to Transform Their Exhibition Floor",
+            href: "/resources/case-studies#age-2026",
             imageSrc: "/images/age-2026-3.png",
           },
           {
-            category: "Customer Story",
-            title: "How a Global Retailer Uses realmspace to Measure Foot Traffic and In-Store Engagement",
-            href: "/resources/case-studies",
-            imageSrc: "/images/kuda-2025.png",
+            category: "Case Study",
+            title: "Brand Activation Intelligence — How Prestmit Turned a Booth into the Most Visited Activation",
+            href: "/resources/case-studies#prestmit",
+            imageSrc: "/images/Add_realmspace_branding_in_lowercase_to_the_oran-1782596029996.png",
           },
           {
-            category: "Research",
-            title: "2026 Benchmark Report: Engagement Signals Across Retail, Trade Shows, and Brand Activations",
-            href: "/resources/benchmarks",
-            imageSrc: "/images/Automation_dashboard_with_consistent_realmspace_br-1782596152361.png",
+            category: "Case Study",
+            title: "Product Education Intelligence — How Kuda Bank Drove Sign-Ups Through Interactive Demos",
+            href: "/resources/case-studies#kuda",
+            imageSrc: "/images/kuda-2025.png",
           },
         ]}
       />
