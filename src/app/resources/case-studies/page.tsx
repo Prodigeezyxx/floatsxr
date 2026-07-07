@@ -401,8 +401,7 @@ export default function CaseStudiesPage() {
           </FadeIn>
           <FadeIn delay={0.15}>
             <p className="body-lg text-mist mt-6 max-w-[600px] mx-auto">
-              Real activations, real results. Explore how brands across Africa use
-              Floats XR to measure, prove, and improve their physical experiences.
+              Real activations, real results. Explore how brands measure, prove, and improve their physical experiences.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
