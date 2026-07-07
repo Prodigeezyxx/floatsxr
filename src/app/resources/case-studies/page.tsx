@@ -34,7 +34,7 @@ const caseStudies = [
     ],
     whatTheyGot: "Before the 2023 edition, Moonshot had no way to measure what attendees actually did on the exhibition floor beyond headcounts and anecdotal feedback. The AR Station and its underlying intelligence layer gave the Moonshot team a complete picture of engagement: which AR experiences resonated most, how long people stayed, and what drove repeat visits. For the first time, Moonshot had data they could use to brief sponsors, price exhibition space, and prove the ROI of immersive activations to future partners.",
     learned: [
-      "Augmented reality at scale is viable at African events. The multi-user AR setup handled peak loads without friction, proving the infrastructure is ready for mass-market deployment.",
+      "Augmented reality at scale is viable at live events. The multi-user AR setup handled peak loads without friction, proving the infrastructure is ready for mass-market deployment.",
       "AR content with brand integration drives organic social reach. Attendees are naturally motivated to share immersive experiences, creating earned media value beyond the event.",
       "Leaderboard and achievement mechanics significantly increase dwell time. Competitive elements turn a passive AR viewer into an active, repeat participant.",
     ],
@@ -84,15 +84,15 @@ const caseStudies = [
     heroImage: "/images/age-2026-3.png",
     client: "Africa Gaming Expo",
     brief: [
-      "Africa Gaming Expo (AGE) is the continent's largest gaming and interactive entertainment event. A two-day showcase bringing together developers, publishers, investors, and gaming communities from across Africa. For the 2026 edition, the AGE team wanted to do something that went beyond a standard exhibitor floor. They wanted an experience that reflected the scale and ambition of the African gaming ecosystem, something that would make the floor itself a destination rather than just a backdrop.",
-      "The specific challenge: how do you make thousands of attendees feel connected to the broader story of African gaming, while capturing meaningful data about who was engaging and how?",
+      "Africa Gaming Expo (AGE) is the continent's largest gaming and interactive entertainment event. A two-day showcase bringing together developers, publishers, investors, and gaming communities from across the continent. For the 2026 edition, the AGE team wanted to do something that went beyond a standard exhibitor floor. They wanted an experience that reflected the scale and ambition of the continent's gaming ecosystem, something that would make the floor itself a destination rather than just a backdrop.",
+      "The specific challenge: how do you make thousands of attendees feel connected to the broader story of gaming on the continent, while capturing meaningful data about who was engaging and how?",
     ],
     solution: [
       "Floats designed and deployed the Africa Gaming Map + Prediction Station. A large-scale, real-time interactive installation at the heart of the AGE 2026 exhibition floor.",
     ],
     features: [
-      "A live, interactive map of the African gaming and gambling ecosystem, visualising studios, publishers, investment activity, and emerging markets across the continent in real time",
-      "A Prediction Station where attendees could place live predictions on gaming industry outcomes like fastest-growing market, next breakout genre, and most likely African gaming IPO. Results updated live on the installation.",
+      "A live, interactive map of the gaming and gambling ecosystem, visualising studios, publishers, investment activity, and emerging markets across the continent in real time",
+      "A Prediction Station where attendees could place live predictions on gaming industry outcomes like fastest-growing market, next breakout genre, and most likely gaming IPO on the continent. Results updated live on the installation.",
       "The RealmSpace intelligence layer running underneath, capturing zone dwell time, interaction depth, footfall patterns, and engagement sequences across the installation and surrounding exhibition floor",
       "A post-event intelligence report delivered to the AGE team showing what actually happened on the floor: which zones attracted the most attention, how long people stayed, and what content drove the deepest engagement",
     ],
@@ -103,7 +103,7 @@ const caseStudies = [
       { metric: "Post-event report delivery", value: "Within 48 hours of event close", meaning: "AGE received actionable floor intelligence faster than any previous edition, enabling immediate sponsor follow-ups." },
       { metric: "Sponsor zone performance", value: "12 zones ranked by engagement", meaning: "For the first time, AGE could tell sponsors which activations drove the most attendee attention and which needed redesign." },
     ],
-    whatTheyGot: "Before this deployment, AGE like most African events left the exhibition floor without knowing what actually happened inside it. Headcounts, post-event surveys, social media impressions. None of it told them what people engaged with, where energy was concentrated, or which sponsors delivered real value for their investment. The intelligence report from this deployment gave AGE's team something they could actually act on. Not just for the next edition, but for how they design the floor, price their sponsor packages, and make the case to returning partners that showing up at AGE is worth it.",
+    whatTheyGot: "Before this deployment, AGE like most events of its kind left the exhibition floor without knowing what actually happened inside it. Headcounts, post-event surveys, social media impressions. None of it told them what people engaged with, where energy was concentrated, or which sponsors delivered real value for their investment. The intelligence report from this deployment gave AGE's team something they could actually act on. Not just for the next edition, but for how they design the floor, price their sponsor packages, and make the case to returning partners that showing up at AGE is worth it.",
     learned: [
       "Attendees engaged significantly more with map and prediction layers than with AR-photo novelty. Interactive intelligence beats passive spectacle.",
       "The installation became a natural networking anchor. People gathered around it, which organically increased dwell time in the surrounding sponsor zones.",
