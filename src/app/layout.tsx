@@ -23,9 +23,18 @@ export const metadata: Metadata = {
       "Measure, prove, and improve every physical activation with attribution-ready analytics. Book a pilot.",
     type: "website",
     siteName: "Floats",
+    images: [
+      {
+        url: "/images/realmspace-kit-1.png",
+        width: 1200,
+        height: 630,
+        alt: "Floats — realmspace spatial intelligence platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/realmspace-kit-1.png"],
   },
   icons: {
     icon: [

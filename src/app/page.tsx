@@ -323,8 +323,8 @@ export default function Home() {
       <ConversionPanel
         headline="Stop guessing what your physical spend returned. Run one pilot. Keep the data forever."
         ctaLabel="Book a Pilot"
-        imageSrc="/images/dd221adb-b6e3-46dd-8111-9bdfbb196676-scaled.jpg"
-        imageAlt="Team reviewing realmspace data"
+        imageSrc="/images/Add_realmspace_branding_in_lowercase_to_the_gree-1782596070128.png"
+        imageAlt="realmspace activation measurement platform"
       />
     </>
   );
