@@ -182,7 +182,7 @@ export default function Home() {
         body="realmspace captures, attributes and benchmarks activation data, then routes it to your CRM and marketing tools through trigger rules you control. Query the data in plain English from the realmspace dashboard."
         primaryCta={{ label: "View plans and pricing", href: "/plans-and-pricing" }}
         secondaryCta={{ label: "Explore realmspace", href: "/products/realmspace" }}
-        imageSrc="/images/Add_realmspace_branding_in_lowercase_to_the_gree-1782596070128.png"
+        imageSrc="/images/Add_realmspace_branding_in_lowercase_to_the_wall-1782596319532.png"
         imageAlt="realmspace measurement platform"
       />
 
@@ -323,7 +323,7 @@ export default function Home() {
       <ConversionPanel
         headline="Stop guessing what your physical spend returned. Run one pilot. Keep the data forever."
         ctaLabel="Book a Pilot"
-        imageSrc="/images/Add_realmspace_branding_in_lowercase_to_the_gree-1782596070128.png"
+        imageSrc="/images/Add_realmspace_branding_in_lowercase_to_the_oran-1782596029996.png"
         imageAlt="realmspace activation measurement platform"
       />
     </>
