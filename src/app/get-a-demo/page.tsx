@@ -1,14 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { FormInput } from "@/components/blocks/FormInput";
-import { Calendar, FileText, HelpCircle } from "lucide-react";
-import type { Metadata } from "next";
+import { Calendar, ExternalLink, FileText } from "lucide-react";
+import { useState } from "react";
 
-export const metadata: Metadata = {
-  title: "Get a Demo — Floats",
-  description: "See realmspace in action. Book a personalised walkthrough of the intelligence layer for physical experiences.",
-};
+const CALENDLY_BASE = "https://calendly.com/hello-floatsanywhere/start?month=2025-07";
 
 export default function GetADemoPage() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const calendlyUrl = `${CALENDLY_BASE}&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&a1=${encodeURIComponent(company)}&a2=${encodeURIComponent(phone)}`;
+
   return (
     <section className="bg-ecru py-20 md:py-28 flex-1">
       <div className="grid-container">
@@ -19,16 +25,27 @@ export default function GetADemoPage() {
               See realmspace in action. We&apos;ll walk you through a real activation dashboard.
             </p>
             <form className="space-y-5">
-              <FormInput label="Full name" id="name" placeholder="Your name" />
-              <FormInput label="Work email" id="email" type="email" placeholder="you@company.com" />
-              <FormInput label="Company" id="company" placeholder="Your company" />
-              <FormInput label="Phone" id="phone" type="tel" placeholder="+1 (555) 000-0000" />
-              <button
-                type="submit"
-                className="inline-flex items-center px-6 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors"
-              >
-                Book a Walkthrough
-              </button>
+              <FormInput label="Full name" id="name" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
+              <FormInput label="Work email" id="email" type="email" placeholder="you@company.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <FormInput label="Company" id="company" placeholder="Your company" value={company} onChange={(e) => setCompany(e.target.value)} />
+              <FormInput label="Phone" id="phone" type="tel" placeholder="+1 (555) 000-0000" value={phone} onChange={(e) => setPhone(e.target.value)} />
+              <div className="space-y-3">
+                <button
+                  type="submit"
+                  className="inline-flex items-center px-6 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors w-full justify-center"
+                >
+                  Book a Walkthrough
+                </button>
+                <a
+                  href={calendlyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border border-cobalt/30 text-cobalt text-sm font-medium hover:bg-cobalt/5 transition-colors w-full"
+                >
+                  <ExternalLink className="size-4" />
+                  Pick a time on Calendly
+                </a>
+              </div>
             </form>
           </div>
           <div className="space-y-4">
