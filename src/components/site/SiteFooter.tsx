@@ -78,7 +78,9 @@ export function SiteFooter() {
             </p>
           </div>
           <Link
-            href="/get-a-demo"
+            href="https://realmspace.floatsanywhere.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center self-start px-6 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-all hover:shadow-glow"
           >
             Get a live demo
