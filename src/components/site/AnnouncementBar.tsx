@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { Globe, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const STORAGE_KEY = "floats-announcement-dismissed";
+const subscribe = () => () => {};
 
 interface AnnouncementBarProps {
   message?: string;
@@ -17,19 +18,17 @@ export function AnnouncementBar({
   ctaLabel = "See how it works",
   ctaHref = "/products/realmspace",
 }: AnnouncementBarProps) {
-  const [dismissed, setDismissed] = useState(true);
-
-  useEffect(() => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) setDismissed(false);
-  }, []);
+  const [dismissed, setDismissed] = useState(false);
+  const isHydrated = useSyncExternalStore(subscribe, () => true, () => false);
+  const wasPreviouslyDismissed =
+    isHydrated && localStorage.getItem(STORAGE_KEY) === "true";
 
   const handleDismiss = () => {
     setDismissed(true);
     localStorage.setItem(STORAGE_KEY, "true");
   };
 
-  if (dismissed) return null;
+  if (!isHydrated || dismissed || wasPreviouslyDismissed) return null;
 
   return (
     <div className="bg-cobalt text-white h-12 md:h-14">

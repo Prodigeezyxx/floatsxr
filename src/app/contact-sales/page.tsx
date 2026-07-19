@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FormInput } from "@/components/blocks/FormInput";
-import { MessageSquare, FileText, HelpCircle } from "lucide-react";
+import { MessageSquare, HelpCircle } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

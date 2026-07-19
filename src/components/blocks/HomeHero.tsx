@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { FadeIn } from "./FadeIn";
@@ -12,7 +13,7 @@ export function HomeHero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <FadeIn>
             <div className="flex items-center gap-3 mb-6">
-              <img src="/images/floats-transparent.png" alt="Floats" className="h-5 w-auto" />
+              <Image src="/images/floats-transparent.png" alt="Floats" width={300} height={80} className="h-5 w-auto" priority />
               <span className="text-[11px] font-medium tracking-[0.1em] text-inkwell/35">
                 realmspace
               </span>
@@ -41,9 +42,9 @@ export function HomeHero() {
             </div>
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-6">
               <span className="text-sm font-medium text-inkwell/50">Backed by</span>
-              <img src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" className="h-9 w-auto" />
-              <img src="/images/aws-activate-logo_final_trans-removebg-preview.png" alt="AWS Activate" className="h-9 w-auto" />
-              <img src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" className="h-10 w-auto" />
+              <Image src="/images/nvidia-inception-JZ337cT9.png" alt="NVIDIA Inception" width={180} height={64} className="h-9 w-auto" />
+              <Image src="/images/aws-activate-logo_final_trans-removebg-preview.png" alt="AWS Activate" width={180} height={64} className="h-9 w-auto" />
+              <Image src="/images/MS_Startups_Celebration_Badge_Dark.png" alt="Microsoft for Startups" width={180} height={72} className="h-10 w-auto" />
             </div>
           </FadeIn>
 

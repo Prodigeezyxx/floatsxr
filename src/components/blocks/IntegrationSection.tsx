@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "./FadeIn";
 
@@ -48,9 +49,11 @@ export function IntegrationSection() {
                 className="flex flex-col items-center gap-3 text-inkwell/40 group"
               >
                 {tool.src ? (
-                  <img
+                  <Image
                     src={tool.src}
                     alt={tool.name}
+                    width={120}
+                    height={32}
                     className="h-8 w-auto opacity-45 group-hover:opacity-80 transition-opacity"
                   />
                 ) : (

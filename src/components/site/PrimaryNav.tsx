@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -158,7 +159,7 @@ export function PrimaryNav() {
     >
       <div className="grid-container flex items-center justify-between h-[72px]">
         <Link href="/" className="hover:opacity-80 transition-opacity">
-          <img src="/images/floats-transparent.png" alt="Floats" className="h-7 md:h-8 w-auto" />
+          <Image src="/images/floats-transparent.png" alt="Floats" width={300} height={80} className="h-7 md:h-8 w-auto" priority />
         </Link>
 
         {/* Desktop nav */}

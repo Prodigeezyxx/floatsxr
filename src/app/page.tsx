@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { HomeHero } from "@/components/blocks/HomeHero";
 import { ThreeColumnFeatures } from "@/components/blocks/ThreeColumnFeatures";
@@ -58,7 +59,7 @@ export default function Home() {
             content: (
               <>
                 <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <img src="/images/Add_realmspace_branding_in_lowercase_to_the_gree-1782596070128.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <Image src="/images/Add_realmspace_branding_in_lowercase_to_the_gree-1782596070128.png" alt="" width={1600} height={1000} className="w-full aspect-[16/10] object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Brand Activations</h3>
                     <p className="caption text-inkwell/70">Measure dwell time, engagement depth, and content performance across every touchpoint. Know which moments drove the most meaningful interaction.</p>
@@ -78,7 +79,7 @@ export default function Home() {
             content: (
               <>
                 <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <img src="/images/Realistic_photograph_of_a_bright_orange_and_white_-1782596045852.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <Image src="/images/Realistic_photograph_of_a_bright_orange_and_white_-1782596045852.png" alt="" width={1600} height={1000} className="w-full aspect-[16/10] object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Trade Shows & Conferences</h3>
                     <p className="caption text-inkwell/70">Multi-booth measurement across an entire show floor. Understand traffic patterns, peak hours, and which exhibits drove the most engagement.</p>
@@ -98,7 +99,7 @@ export default function Home() {
             content: (
               <>
                 <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <img src="/images/Realistic_photograph_of_an_emerald_green_interacti-1782596058924.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <Image src="/images/Realistic_photograph_of_an_emerald_green_interacti-1782596058924.png" alt="" width={1600} height={1000} className="w-full aspect-[16/10] object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Retail Flagship</h3>
                     <p className="caption text-inkwell/70">Permanent installation measurement for flagship stores. Understand how visitors move through your space, which displays convert, and what drives repeat visits.</p>
@@ -118,7 +119,7 @@ export default function Home() {
             content: (
               <>
                 <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <img src="/images/Add_realmspace_branding_in_lowercase_to_the_oran-1782596029996.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <Image src="/images/Add_realmspace_branding_in_lowercase_to_the_oran-1782596029996.png" alt="" width={1600} height={1000} className="w-full aspect-[16/10] object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Sponsor Measurement</h3>
                     <p className="caption text-inkwell/70">Give your sponsors a reason to come back. Show them exactly how many people engaged with their activation, for how long, and what action they took.</p>
@@ -138,7 +139,7 @@ export default function Home() {
             content: (
               <>
                 <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <img src="/images/Realistic_photograph_of_a_dark_charcoal_grey_angul-1782596012937.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <Image src="/images/Realistic_photograph_of_a_dark_charcoal_grey_angul-1782596012937.png" alt="" width={1600} height={1000} className="w-full aspect-[16/10] object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Venue Operations</h3>
                     <p className="caption text-inkwell/70">Ongoing telemetry for venue operators. Understand traffic flow, bottleneck zones, and how to optimise your space for both visitors and exhibitors.</p>
@@ -158,7 +159,7 @@ export default function Home() {
             content: (
               <>
                 <div className="surface-card p-0 shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden">
-                  <img src="/images/realmspace-kit-1.png" alt="" className="w-full aspect-[16/10] object-cover" />
+                  <Image src="/images/realmspace-kit-1.png" alt="" width={1600} height={1000} className="w-full aspect-[16/10] object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
                   <div className="p-6 md:p-7">
                     <h3 className="heading-3 text-inkwell mb-2">Measurable ROI</h3>
                     <p className="caption text-inkwell/70">For the C-suite who needs defensible spend. Connect spatial behaviour to business outcomes with clear, auditable data your finance team can defend.</p>
@@ -262,7 +263,7 @@ export default function Home() {
                   href={item.href}
                   className="bg-white rounded-xl border border-mist/30 shadow-card group hover:shadow-elevated hover:border-cobalt/15 transition-all duration-300 h-full flex flex-col overflow-hidden"
                 >
-                  <img src={item.img} alt="" className="w-full aspect-video object-cover" />
+                  <Image src={item.img} alt="" width={1600} height={900} className="w-full aspect-video object-cover" sizes="(min-width: 768px) 33vw, 100vw" />
                   <div className="p-6 md:p-7 flex flex-col flex-1">
                     <p className="text-sm font-semibold text-inkwell/30 mb-3 tracking-tight">{item.title}</p>
                     <p className="caption text-inkwell/70 leading-relaxed mb-6 flex-1">{item.story}</p>
