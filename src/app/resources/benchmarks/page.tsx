@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -64,10 +65,13 @@ export default function BenchmarksPage() {
                 key={chart.title}
                 className="surface-card shadow-card hover:shadow-elevated transition-all duration-300 overflow-hidden rounded-xl border border-mist/20"
               >
-                <img
+                <Image
                   src={chart.src}
                   alt={chart.title}
+                  width={1200}
+                  height={800}
                   className="w-full h-auto"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 />
                 <div className="p-5 md:p-6">
                   <h3 className="text-sm font-semibold text-inkwell mb-1">{chart.title}</h3>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -35,10 +36,13 @@ export function ScreenshotFrame({
       )}
     >
       <div className="rounded-lg overflow-hidden bg-ecru/40">
-        <img
+        <Image
           src={imgSrc}
           alt={alt}
+          width={1600}
+          height={900}
           className="w-full h-auto object-contain"
+          sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
           onError={handleError}
         />
       </div>

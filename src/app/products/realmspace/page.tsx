@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { HeroSplit } from "@/components/blocks/HeroSplit";
 import { ProductCard } from "@/components/blocks/ProductCard";
 import { StatCard } from "@/components/blocks/StatCard";
 import { Highlight } from "@/components/blocks/Highlight";
 import { ConversionPanel } from "@/components/blocks/ConversionPanel";
-import { Eye, Target, TrendingUp, Shield, MessageSquare, BarChart3 } from "lucide-react";
+import { Eye, Shield, MessageSquare, BarChart3 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,17 +20,22 @@ export default function RealmspacePage() {
       {/* Sub-nav strip */}
       <div className="bg-white border-b border-mist/30 sticky top-[72px] z-40 overflow-x-auto">
         <div className="grid-container flex items-center gap-6 h-10 text-[13px] text-inkwell/60">
-          {["Overview", "Booths & Zones", "Insight Reports", "Natural-Language Query", "Predictive ROI", "Privacy"].map(
-            (item) => (
-              <Link
-                key={item}
-                href={`#${item.toLowerCase().replace(/[^a-z]+/g, "-")}`}
-                className="shrink-0 hover:text-cobalt transition-colors whitespace-nowrap"
-              >
-                {item}
-              </Link>
-            )
-          )}
+          {[
+            { label: "Overview", href: "#overview" },
+            { label: "Booths & Zones", href: "#booths-and-zones" },
+            { label: "Insight Reports", href: "#insight-reports" },
+            { label: "Natural-Language Query", href: "#natural-language-query" },
+            { label: "Predictive ROI", href: "/products/realmspace/predictive-roi" },
+            { label: "Privacy", href: "#privacy" },
+          ].map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="shrink-0 hover:text-cobalt transition-colors whitespace-nowrap"
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
       </div>
 
@@ -39,7 +45,7 @@ export default function RealmspacePage() {
         headline="See, prove, and improve every activation."
         body="realmspace captures what people actually do in a physical space: where they go, what they engage with, how long they stay, and what drives action. always."
         primaryCta={{ label: "Book a Walkthrough", href: "/get-a-demo" }}
-        secondaryCta={{ label: "See how it works", href: "/get-a-demo" }}
+        secondaryCta={{ label: "See how it works", href: "#booths-and-zones" }}
         imageSrc="/images/placeholders/hero-vr-professional.svg"
         imageAlt="realmspace activation dashboard"
         floatingCard={
@@ -94,10 +100,13 @@ export default function RealmspacePage() {
               { src: "/images/placeholders/3d-ai-workspace.svg", label: "Insight reports" },
             ].map((item, i) => (
               <div key={i} className="bg-ecru rounded-lg overflow-hidden">
-                <img
+                <Image
                   src={item.src}
                   alt={item.label}
+                  width={1200}
+                  height={900}
                   className="w-full aspect-[4/3] object-cover"
+                  sizes="(min-width: 768px) 33vw, 100vw"
                 />
                 <div className="p-4">
                   <p className="text-sm font-medium text-inkwell">{item.label}</p>
@@ -174,20 +183,26 @@ export default function RealmspacePage() {
                     <p className="body-lg text-inkwell/70 max-w-[65ch]">{feature.body}</p>
                   </div>
                   <div className="order-1 md:order-2">
-                    <img
+                    <Image
                       src={feature.image}
                       alt={feature.title}
+                      width={1200}
+                      height={675}
                       className="w-full rounded-lg object-cover aspect-video"
+                      sizes="(min-width: 768px) 50vw, 100vw"
                     />
                   </div>
                 </>
               ) : (
                 <>
                   <div>
-                    <img
+                    <Image
                       src={feature.image}
                       alt={feature.title}
+                      width={1200}
+                      height={675}
                       className="w-full rounded-lg object-cover aspect-video"
+                      sizes="(min-width: 768px) 50vw, 100vw"
                     />
                   </div>
                   <div>

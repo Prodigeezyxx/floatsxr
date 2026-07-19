@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { PoppyFrame } from "./PoppyFrame";
 import { FadeIn } from "./FadeIn";
@@ -54,10 +55,14 @@ export function HeroSplit({
           <FadeIn direction="right" delay={0.15}>
             <div className="relative">
               <div className="relative rounded-md overflow-hidden">
-                <img
+                <Image
                   src={imageSrc}
                   alt={imageAlt}
+                  width={1200}
+                  height={800}
                   className="w-full h-auto object-cover rounded-md"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  priority
                 />
                 <PoppyFrame />
               </div>

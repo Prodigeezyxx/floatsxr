@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 interface PhotoCard {
@@ -46,10 +47,13 @@ export function PhotoCardGrid({ cards }: PhotoCardGridProps) {
                 i === 4 && "col-span-1 row-span-1"
               )}
             >
-              <img
+              <Image
                 src={card.imageSrc}
                 alt={card.imageAlt}
+                width={1200}
+                height={900}
                 className="w-full h-full object-cover aspect-[4/3]"
+                sizes="(min-width: 768px) 33vw, 50vw"
               />
               <div className="absolute bottom-3 left-3 size-8 rounded-full bg-cobalt/90 flex items-center justify-center text-white text-lg font-light">
                 +

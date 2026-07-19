@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/blocks/FadeIn";
@@ -292,10 +293,13 @@ function CaseStudyCard({
                 <div className="pt-8">
                   <FadeIn delay={0.05}>
                     <div className="rounded-xl overflow-hidden mb-10 border border-mist/30 shadow-card">
-                      <img
+                      <Image
                         src={study.heroImage}
                         alt={study.client}
+                        width={1600}
+                        height={900}
                         className="w-full aspect-[16/9] object-cover"
+                        sizes="100vw"
                       />
                     </div>
                   </FadeIn>
