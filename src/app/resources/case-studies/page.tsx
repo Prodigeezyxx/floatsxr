@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/blocks/FadeIn";
+import { ExperienceViewer } from "@/components/experience/ExperienceViewer";
+import { getExperience } from "@/lib/experiences";
 
 const caseStudies = [
   {
@@ -240,6 +242,7 @@ function CaseStudyCard({
   index: number;
 }) {
   const [expanded, setExpanded] = useState(false);
+  const exp = getExperience(study.id);
 
   return (
     <section id={study.id} className={`${index % 2 === 0 ? "bg-white" : "bg-ecru"} scroll-mt-20`}>
@@ -291,12 +294,29 @@ function CaseStudyCard({
               >
                 <div className="pt-8">
                   <FadeIn delay={0.05}>
-                    <div className="rounded-xl overflow-hidden mb-10 border border-mist/30 shadow-card">
-                      <img
-                        src={study.heroImage}
-                        alt={study.client}
-                        className="w-full aspect-[16/9] object-cover"
-                      />
+                    <div className="mb-10">
+                      {exp ? (
+                        <>
+                          <p className="micro text-cobalt mb-3">
+                            Interactive experience — explore the space we built
+                          </p>
+                          <ExperienceViewer
+                            poster={exp.poster}
+                            alt={study.client}
+                            hotspots={exp.hotspots}
+                            launchUrl={exp.launchUrl}
+                            launchLabel={exp.launchLabel}
+                          />
+                        </>
+                      ) : (
+                        <div className="rounded-xl overflow-hidden border border-mist/30 shadow-card">
+                          <img
+                            src={study.heroImage}
+                            alt={study.client}
+                            className="w-full aspect-[16/9] object-cover"
+                          />
+                        </div>
+                      )}
                     </div>
                   </FadeIn>
 

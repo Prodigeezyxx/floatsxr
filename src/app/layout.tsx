@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/site/SiteShell";
+import { AssistantWidget } from "@/components/assistant/AssistantWidget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full antialiased overflow-x-hidden`}>
       <body className="min-h-full flex flex-col bg-ecru text-inkwell font-sans">
         <SiteShell>{children}</SiteShell>
+        <AssistantWidget />
       </body>
     </html>
   );
