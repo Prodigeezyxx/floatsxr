@@ -119,19 +119,7 @@ const navLinks = [
   },
   {
     label: "Pricing",
-    href: "/plans-and-pricing",
-    children: [
-      {
-        column: "Plans",
-        links: [
-          { label: "Overview", href: "/plans-and-pricing" },
-          { label: "Intelligence Layer Only", href: "/plans-and-pricing/intelligence-layer-only" },
-          { label: "Bundled Activation", href: "/plans-and-pricing/bundled-activation" },
-          { label: "Retainer", href: "/plans-and-pricing/retainer" },
-          { label: "API Plans", href: "/plans-and-pricing/api-plans" },
-        ],
-      },
-    ],
+    href: "/quote",
   },
 ];
 

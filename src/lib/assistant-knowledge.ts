@@ -178,7 +178,7 @@ export const KNOWLEDGE_BASE: AssistantEntry[] = [
 
 // Hand-off constants (front-end only — no backend persistence).
 export const CALENDLY_URL = "https://calendly.com/hello-floatsanywhere/start";
-export const QUOTE_URL = "/get-a-demo"; // marketing-site handoff; the /quote flow lives in the Lovable app
+export const QUOTE_URL = "/quote"; // the on-site 2-minute quote flow
 export const WHATSAPP_URL = "https://wa.me/447445000000"; // TODO: confirm business WhatsApp number
 export const TEAM_EMAIL = "hello@floatsanywhere.com"; // TODO: confirm
 export const KEMI_NAME = "Kemi";
