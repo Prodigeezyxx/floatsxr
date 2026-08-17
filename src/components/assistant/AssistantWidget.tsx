@@ -24,8 +24,6 @@ interface Message {
 const WELCOME =
   "Hi, I'm the Floats assistant. Ask me about what we build, what it costs, turnaround times, or how realmspace measures an activation — and I'll point you the right way.";
 
-let nextId = 1;
-
 export function AssistantWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
@@ -35,14 +33,17 @@ export function AssistantWidget() {
   const [typing, setTyping] = useState(false);
   const [notifyEmail, setNotifyEmail] = useState("");
   const scrollRef = useRef<HTMLDivElement>(null);
+  const idRef = useRef(1);
 
   useEffect(() => {
     const el = scrollRef.current;
     if (el) el.scrollTo({ top: el.scrollHeight, behavior: "smooth" });
   }, [messages, typing, open]);
 
-  const push = (m: Omit<Message, "id">) =>
-    setMessages((prev) => [...prev, { ...m, id: nextId++ }]);
+  const push = (m: Omit<Message, "id">) => {
+    const id = idRef.current++;
+    setMessages((prev) => [...prev, { ...m, id }]);
+  };
 
   const send = (raw: string) => {
     const text = raw.trim();
@@ -56,7 +57,7 @@ export function AssistantWidget() {
     window.setTimeout(() => {
       push({ role: "assistant", text: result.answer, handoff: result.handoff });
       setTyping(false);
-    }, 400 + Math.random() * 300);
+    }, 450);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
