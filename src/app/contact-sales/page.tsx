@@ -1,14 +1,33 @@
+"use client";
+
 import Link from "next/link";
 import { FormInput } from "@/components/blocks/FormInput";
-import { MessageSquare, FileText, HelpCircle } from "lucide-react";
-import type { Metadata } from "next";
+import { MessageSquare, FileText, HelpCircle, CalendarCheck } from "lucide-react";
+import { useState } from "react";
 
-export const metadata: Metadata = {
-  title: "Contact Sales — Floats",
-  description: "Talk to the Floats team about your activation. Get a personalised walkthrough of realmspace.",
-};
+const CALENDLY_URL = "https://calendly.com/hello-floatsanywhere/start";
 
 export default function ContactSalesPage() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [role, setRole] = useState("");
+  const [timeline, setTimeline] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const params = new URLSearchParams();
+    if (name.trim()) params.set("name", name.trim());
+    if (email.trim()) params.set("email", email.trim());
+    if (company.trim()) params.set("a1", company.trim());
+    if (role.trim()) params.set("a2", role.trim());
+    if (timeline.trim()) params.set("a3", timeline.trim());
+    if (message.trim()) params.set("a4", message.trim());
+    const qs = params.toString();
+    window.open(`${CALENDLY_URL}${qs ? `?${qs}` : ""}`, "_blank");
+  };
+
   return (
     <section className="bg-ecru py-20 md:py-28 flex-1">
       <div className="grid-container">
@@ -19,14 +38,17 @@ export default function ContactSalesPage() {
             <p className="body-lg text-inkwell/60 mb-8">
               Tell us about your activation. We&apos;ll show you what realmspace can do.
             </p>
-            <form className="space-y-5">
-              <FormInput label="Full name" id="name" placeholder="Jamie Dobbs" />
-              <FormInput label="Company" id="company" placeholder="Your company" />
-              <FormInput label="Role" id="role" placeholder="Head of Events" />
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              <FormInput label="Full name" id="name" placeholder="Jamie Dobbs" value={name} onChange={(e) => setName(e.target.value)} />
+              <FormInput label="Work email" id="email" type="email" placeholder="you@company.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <FormInput label="Company" id="company" placeholder="Your company" value={company} onChange={(e) => setCompany(e.target.value)} />
+              <FormInput label="Role" id="role" placeholder="Head of Events" value={role} onChange={(e) => setRole(e.target.value)} />
               <FormInput
                 label="Activation timeline"
                 id="timeline"
                 placeholder="Next quarter / 3-6 months / Just exploring"
+                value={timeline}
+                onChange={(e) => setTimeline(e.target.value)}
               />
               <div>
                 <label htmlFor="message" className="micro text-inkwell/60 mb-2 block">
@@ -37,13 +59,16 @@ export default function ContactSalesPage() {
                   rows={4}
                   className="h-auto w-full px-4 py-3 rounded-lg bg-white border border-mist text-inkwell placeholder:text-inkwell/50 text-base outline-none focus:border-cobalt focus:ring-2 focus:ring-cobalt/20 transition-all resize-none"
                   placeholder="What kind of activation are you planning? How many touchpoints? What outcomes matter most?"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center px-6 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors"
               >
-                Send message
+                <CalendarCheck className="size-4" />
+                Continue to Calendly
               </button>
             </form>
           </div>
