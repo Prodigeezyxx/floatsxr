@@ -3,6 +3,13 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { CALENDLY_URL } from "@/lib/assistant-knowledge";
+import { TurnstileWidget } from "./TurnstileWidget";
+
+// Cloudflare's visible test key — always passes, so local dev and previews
+// work without any config. Set NEXT_PUBLIC_TURNSTILE_SITE_KEY in the Pages
+// dashboard (or .env) before launch for real protection.
+const TURNSTILE_SITE_KEY =
+  process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "1x00000000000000000000AA";
 
 const STEPS = ["Experience", "Scale", "Event", "You"] as const;
 
@@ -50,17 +57,30 @@ export function QuoteWizard() {
   const [brand, setBrand] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [widgetNonce, setWidgetNonce] = useState(0);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
 
   const canContinue = useMemo(() => {
     if (step === 0) return experience !== null;
     if (step === 1) return footfall !== null && duration !== null;
     if (step === 2) return true; // brand is optional lead capture
-    return name.trim().length > 0 && email.includes("@");
-  }, [step, experience, footfall, duration, name, email]);
+    return (
+      name.trim().length > 0 &&
+      email.includes("@") &&
+      turnstileToken !== null &&
+      !submitting
+    );
+  }, [step, experience, footfall, duration, name, email, turnstileToken, submitting]);
 
-  const submit = () => {
-    // No backend yet — fire an analytics event and hand the summary over.
+  const submit = async () => {
+    if (submitting) return;
+    setSubmitting(true);
+    setSubmitError(null);
+
+    // Analytics stays best-effort.
     try {
       const w = window as unknown as { gtag?: (...args: unknown[]) => void };
       if (typeof w.gtag === "function") {
@@ -74,7 +94,53 @@ export function QuoteWizard() {
     } catch {
       /* analytics is best-effort */
     }
-    setSubmitted(true);
+
+    try {
+      const res = await fetch("/api/send-quote", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          experience,
+          footfall,
+          duration,
+          brand: brand.trim(),
+          name: name.trim(),
+          email: email.trim(),
+          turnstileToken,
+        }),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        return;
+      }
+
+      let code = "unknown";
+      try {
+        const data = await res.json();
+        if (data && typeof data.error === "string") code = data.error;
+      } catch {
+        /* non-JSON error body */
+      }
+
+      if (code === "invalid_turnstile" || code === "turnstile_required") {
+        setSubmitError("The security check expired — please re-verify below, then try again.");
+      } else if (res.status >= 500) {
+        setSubmitError(
+          "Our email service is having a moment. Please send your request by email instead — it reaches the same team.",
+        );
+      } else {
+        setSubmitError("We couldn't send your request. Please email us instead — it reaches the same team.");
+      }
+      setTurnstileToken(null);
+      setWidgetNonce((n) => n + 1);
+    } catch {
+      setSubmitError("We couldn't reach our server. Please email us instead — it reaches the same team.");
+      setTurnstileToken(null);
+      setWidgetNonce((n) => n + 1);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const reset = () => {
@@ -85,6 +151,8 @@ export function QuoteWizard() {
     setBrand("");
     setName("");
     setEmail("");
+    setTurnstileToken(null);
+    setSubmitError(null);
     setSubmitted(false);
   };
 
@@ -248,6 +316,16 @@ export function QuoteWizard() {
                 placeholder="Work email"
                 className="w-full rounded-xl border border-mist bg-white px-5 py-4 text-inkwell placeholder:text-inkwell/40 focus:outline-none focus:border-cobalt focus:ring-2 focus:ring-cobalt/20"
               />
+              <div>
+                <TurnstileWidget
+                  siteKey={TURNSTILE_SITE_KEY}
+                  onToken={setTurnstileToken}
+                  nonce={widgetNonce}
+                />
+                <p className="text-center caption text-inkwell/50 mt-3">
+                  Just checking you&apos;re human.
+                </p>
+              </div>
             </div>
           </>
         )}
@@ -282,13 +360,30 @@ export function QuoteWizard() {
             <button
               onClick={submit}
               disabled={!canContinue}
-              className="inline-flex items-center px-8 py-3 rounded-full bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
             >
-              Get my quote
+              {submitting && (
+                <span className="size-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
+              )}
+              {submitting ? "Sending…" : "Get my quote"}
             </button>
           )}
         </div>
       </div>
+
+      {submitError && (
+        <div className="mt-6 mx-auto max-w-[480px] text-center">
+          <p className="caption text-inkwell/90 bg-white border border-mist rounded-lg px-4 py-3">
+            {submitError}{" "}
+            <a
+              href={`mailto:hello@floatsanywhere.com?subject=${encodeURIComponent("Quote request")}`}
+              className="text-cobalt hover:underline"
+            >
+              Email us your request
+            </a>
+          </p>
+        </div>
+      )}
 
       <p className="text-center caption text-inkwell/50 mt-8">
         Prefer to talk it through?{" "}
