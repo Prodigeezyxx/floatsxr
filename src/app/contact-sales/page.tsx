@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FormInput } from "@/components/blocks/FormInput";
-import { MessageSquare, FileText, HelpCircle, CalendarCheck } from "lucide-react";
+import { MessageSquare, HelpCircle, CalendarCheck } from "lucide-react";
 import { useState } from "react";
 
 const CALENDLY_URL = "https://calendly.com/hello-floatsanywhere/start";
@@ -68,7 +68,7 @@ export default function ContactSalesPage() {
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-cobalt text-white text-sm font-medium hover:bg-cobalt/90 transition-colors"
               >
                 <CalendarCheck className="size-4" />
-                Continue to Calendly
+                Book Session
               </button>
             </form>
           </div>
