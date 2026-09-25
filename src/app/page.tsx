@@ -301,19 +301,19 @@ export default function Home() {
           {
             category: "Case Study",
             title: "Event Intelligence — How AGE 2026 Used Real-Time Data to Transform Their Exhibition Floor",
-            href: "/resources/case-studies#age-2026",
+            href: "/resources/case-studies/age-2026/",
             imageSrc: "/images/age-2026-3.png",
           },
           {
             category: "Case Study",
             title: "Brand Activation Intelligence — How Prestmit Turned a Booth into the Most Visited Activation",
-            href: "/resources/case-studies#prestmit",
+            href: "/resources/case-studies/prestmit/",
             imageSrc: "/images/Add_realmspace_branding_in_lowercase_to_the_oran-1782596029996.png",
           },
           {
             category: "Case Study",
             title: "Product Education Intelligence — How Kuda Bank Drove Sign-Ups Through Interactive Demos",
-            href: "/resources/case-studies#kuda",
+            href: "/resources/case-studies/kuda/",
             imageSrc: "/images/kuda-2025.png",
           },
         ]}

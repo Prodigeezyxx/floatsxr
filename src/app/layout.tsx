@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/site/SiteShell";
 import { AssistantWidget } from "@/components/assistant/AssistantWidget";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,6 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Floats — Trade Show ROI & Brand Activation Measurement Platform",
     template: "%s | Floats",
